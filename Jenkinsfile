@@ -12,7 +12,7 @@ pipeline {
 		  	echo 'Hello'
 		  	sh 'cd /home/deployer/'
 			sh "pwd"
-		  	sh "git pull git@github.com:cube13/ddruk_com_ua.git"
+		  	sh "git pull git@github.com:cube13/ddruk-center.git"
 		  	slackSend color: "good", message: "Build: ${env.JOB_NAME} with buildnumber ${env.BUILD_NUMBER} was successful"
 			}
 		}
