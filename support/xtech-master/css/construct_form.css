@@ -1,0 +1,113 @@
+/*construct form*/
+.form.construct{
+    width: 1060px;
+}
+div.form.construct form div.row {
+    border-bottom: 1px solid #cccccc;
+    height: 60px;
+}
+div.form.construct form div.row input[type="checkbox"] {
+    width: 50px;
+    height: 30px;
+    display: block;
+    float: left;
+    margin-top: 12px;
+}
+div.form.construct form div.row span {
+    width: 120px;
+    height: 30px;
+    display: block;
+    float: left;
+    margin-top: 5px;
+}
+div.form.construct form div.row span #sort_0, div.form.construct form div.row span #sort_1{
+    width: 30px;
+    height: 5px;
+    display: block;
+    float: left;
+}
+
+div.form.construct form div.row >label{
+    display: block;
+    float: left;
+    margin: 18px 25px;
+    font-size: 1.2em;
+    width: 260px;
+}
+div.form.construct form div.row select,
+div.form.construct form div.row input[type="text"]{
+    display: block;
+    float: left;
+    margin: 18px 25px;
+}
+
+input.btn:before {
+    background: linear-gradient(rgba(200, 200, 200, 0.5), rgba(240, 240, 240, 0.5)) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    bottom: -10px;
+    content: "";
+    left: -10px;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    z-index: -1;
+}
+input.btn {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: linear-gradient(rgb(206, 220, 231), rgb(89, 106, 114)) repeat scroll 0 0 rgb(206, 220, 231);
+    border-color: rgba(0, 0, 0, 0.3) rgba(110, 121, 128, 0.8) rgba(110, 121, 128, 0.8);
+    border-image: none;
+    border-radius: 5px;
+    border-right: 1px solid rgba(110, 121, 128, 0.8);
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 -1px rgba(10, 21, 28, 0.9) inset, 0 1px rgba(255, 255, 255, 0.5) inset;
+    color: #f8f8f8;
+    cursor: pointer;
+    display: inline-block;
+    height: 2.5em;
+    line-height: 2.1em;
+    outline: medium none;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 115px;
+}
+
+.title_select,
+.title_order,
+.title_name,
+.title_def,
+.title_value {
+    height: 40px;
+    display: block;
+    float: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    border: 1px solid white;
+    word-wrap: break-word;
+    background-color: #c8d4c8;
+}
+
+.title_select {
+    font-size: 1.0em;
+    width: 50px;
+}
+.title_order {
+    width: 120px;
+}
+.title_name {
+    width: 300px;
+}
+.title_def {
+    width: 150px;
+}
+.title_value {
+    width: 430px;
+}

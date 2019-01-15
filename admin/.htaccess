@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Nah-Nah. Only for valid user"
+AuthUserFile /var/www/sc-ddruk/htpass
+require valid-user

@@ -1,0 +1,13 @@
+#AuthType Basic
+#AuthName "Nah-Nah. Only for valid user"
+#AuthUserFile /var/www/sc-ddruk/htpass
+#require valid-user
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule (.*) index.php/$1 [L]
+</IfModule>
+<IfModule !mod_rewrite.c>
+	ErrorDocument 404 /index.php
+</IfModule>

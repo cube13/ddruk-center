@@ -1,0 +1,7 @@
+select t_devices.* 
+from t_departmens, t_branches, t_cabinets, t_employees, t_devices
+where t_branches.id_organization = 1
+and t_departmens.id_branch = t_branches.id_branch
+and t_cabinets.id_department = t_departmens.id_department
+and t_employees.id_cabinet = t_cabinets.id_cabinet
+and t_devices.id_employee = t_employees.id_employee

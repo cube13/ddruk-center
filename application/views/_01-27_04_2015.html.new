@@ -1,0 +1,1432 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="application/vnd.ms-excel; charset=UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=100">
+      <title>Виписки</title><style type="text/css">
+                    @page
+                    {margin:.98in .79in .98in .79in;
+                    mso-header-margin:.5in;
+                    mso-footer-margin:.5in;}
+                    tr
+                    {mso-height-source:auto;}
+                    col
+                    {mso-width-source:auto;}
+                    br
+                    {mso-data-placement:same-cell;}
+                    .style0
+                    {mso-number-format:General;
+                    text-align:general;
+                    vertical-align:bottom;
+                    white-space:nowrap;
+                    mso-rotate:0;
+                    mso-background-source:auto;
+                    mso-pattern:auto;
+                    color:windowtext;
+                    font-size:10.0pt;
+                    font-weight:400;
+                    font-style:normal;
+                    text-decoration:none;
+                    font-family:'Arial Unicode MS', Georgia, Arial;
+                    mso-generic-font-family:auto;
+                    mso-font-charset:204;
+                    border:none;
+                    mso-protection:locked visible;
+                    mso-style-name:Обычный;
+                    mso-style-id:0;}
+                    td
+                    {mso-style-parent:style0;
+                    padding-top:1px;
+                    padding-right:1px;
+                    padding-left:1px;
+                    mso-ignore:padding;
+                    color:windowtext;
+                    font-size:10.0pt;
+                    font-weight:400;
+                    font-style:normal;
+                    text-decoration:none;
+                    font-family:'Arial Unicode MS', Georgia, Arial;
+                    mso-generic-font-family:auto;
+                    mso-font-charset:204;
+                    mso-number-format:General;
+                    text-align:general;
+                    vertical-align:bottom;
+                    border:none;
+                    mso-background-source:auto;
+                    mso-pattern:auto;
+                    mso-protection:locked visible;
+                    white-space:nowrap;
+                    mso-rotate:0;}
+                    .xl24
+                    {mso-style-parent:style0;
+                    text-align:center;}
+                    .xl25
+                    {mso-style-parent:style0;
+                    font-size:8.0pt;
+                    font-weight:700;
+                    mso-generic-font-family:auto;
+                    mso-font-charset:0;
+                    text-align:center;
+                    vertical-align:middle;
+                    border-top:0.5pt solid windowtext;
+                    border-right:none;
+                    border-bottom:0.5pt solid windowtext;
+                    border-left:0.5pt solid windowtext;
+                    background:silver;
+                    mso-pattern:auto none;
+                    white-space:normal;}
+                    .xl26
+                    {mso-style-parent:style0;
+                    font-size:8.0pt;
+                    font-weight:700;
+                    width: 800px;
+                    mso-width-source:auto none;
+                    mso-generic-font-family:auto;
+                    mso-font-charset:0;
+                    text-align:center;
+                    vertical-align:middle;
+                    border-top:0.5pt solid windowtext;
+                    border-right:none;
+                    border-bottom:0.5pt solid windowtext;
+                    border-left:0.5pt solid windowtext;
+                    background:silver;
+                    mso-pattern:auto none;
+                    white-space:normal;}
+                    .xl27
+                    {mso-style-parent:style0;
+                    font-size:8.0pt;
+                    font-weight:700;
+                    mso-generic-font-family:auto;
+                    mso-font-charset:0;
+                    text-align:center;
+                    vertical-align:middle;
+                    border:0.5pt solid windowtext;
+                    background:silver;
+                    mso-pattern:auto none;
+                    white-space:normal;}
+                    .xl28
+                    {mso-style-parent:style0;
+                    font-family:'Arial Unicode MS', Georgia, Arial;
+                    mso-generic-font-family:auto;
+                    mso-font-charset:0;
+                    text-align:center;
+                    white-space:normal;}
+                    .xl29
+                    {mso-style-parent:style0;
+                    font-size:9.0pt;
+                    font-family:'Arial Unicode MS', Georgia, Arial;
+                    mso-generic-font-family:auto;
+                    mso-font-charset:0;
+                    text-align:left;
+                    white-space:normal;
+                    mso-number-format:"\@";}
+                    .xl30
+                    {mso-style-parent:style0;
+                    font-size:9.0pt;
+                    font-family:'Arial Unicode MS', Georgia, Arial;
+                    mso-generic-font-family:auto;
+                    mso-font-charset:0;
+                    text-align:left;
+                    white-space:normal;
+                    mso-number-format:"Short Date";}
+                    .xl31
+                    {mso-style-parent:style0;
+                    font-size:9.0pt;
+                    font-family:'Arial Unicode MS', Georgia, Arial;
+                    mso-generic-font-family:auto;
+                    mso-font-charset:0;
+                    text-align:left;
+                    white-space:normal;
+                    mso-number-format:"hh\:mm\:ss";}
+                    .xl32
+                    {mso-style-parent:style0;
+                    font-size:9.0pt;
+                    font-family:'Arial Unicode MS', Georgia, Arial;
+                    font-weight:700;
+                    mso-generic-font-family:auto;
+                    mso-font-charset:0;
+                    mso-number-format:Fixed;
+                    text-align:right;
+                    white-space:normal;}
+                </style></head>
+   <body>
+      <table cellspacing="0" cellpadding="0" border="0" width="100%">
+         <tr class="xl24">
+            <th class="xl29" width="1500" style="font-size:3.6mm; font-weight:700; text-align: center; border-bottom:1.0pt solid windowtext;" colspan="11">Виписка по рахунку № 26008052602462 "ШВАЙКО ВОЛОДИМИР ВАЛЕРIЙОВИЧ, ФОП" За місяць
+               "квітня 2015".
+            </th>
+         </tr>
+         <tr class="xl24">
+            <th class="xl28" width="1500" height="10" colspan="11">
+               &nbsp;
+               
+            </th>
+         </tr>
+      </table>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+         <tr class="xl24">
+            <th class="xl25">№</th>
+            <th class="xl25">Дата проводки</th>
+            <th class="xl25">Час проводки</th>
+            <th class="xl25" nowrap>Сума</th>
+            <th class="xl25">Валюта</th>
+            <th class="xl26">Призначення платежу</th>
+            <th class="xl25">ЄДРПОУ контрагента</th>
+            <th class="xl25">Назва контрагента</th>
+            <th class="xl25">Рахунок контрагента</th>
+            <th class="xl25">МФО контрагента</th>
+            <th class="xl27">Референс</th>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0427VPVOE</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">27.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">01:37:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-809.01</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">23.04.2015 S0158646 23.04.2015 12:27:24 S0158646  Покупка товара 5329572000127705</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">РАСЧЕТЫ ПО EC/MC (Compass+ - эмиссия)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29245827503169</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0427VPVOE.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">169</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">24.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">16:38:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">2372.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">ОПЛАТА ЗА ЗАПРАВКУ КАРТРИДЖIВ ЗГIДНО РАХ.-ФАКТ.N 13921/1 ВIД 24.04.2015 Р.ТА ДОГ.N
+               4 ВIД 19.01.2015 Р. БЕЗ ПДВ.
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">22869431</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">УПФУ в Святошинському р-нi м.Киева</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">256003062612</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">322669</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">HSKLF0424L245Y.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">170</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">24.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">16:38:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">2703.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">ОПЛАТА ЗА КАРТРИДЖI ЗГIДНО РАХ.-ФАКТ.N 13921 ВIД 24.04.15 Р. ТА ДОГ.N 5 ВIД 03.03.2015
+               Р. БЕЗ ПДВ.
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">22869431</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">УПФУ в Святошинському р-нi м.Киева</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">256003062612</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">322669</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">HSKLF0424L245Z.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0424YNBXT</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">24.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">04:00:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-987.01</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">23.04.2015 SVK209GS 23.04.2015 13:16:09 SVK209GS 15431488217 Покупка товара 5329572000127705</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">расчеты по картам (С+, ACQ1)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29247827503747</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0424YNBXT.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0423STCF7</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">23.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">21:59:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-500.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Перевод на карту ПриватБанка {{DAS=98155337003}}{{DAI=3067798}}{{DA20=3}}</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">СКС 'КРЕДИТНАЯ КАРТА'</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">26251090062329</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">300711</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">SAMBF0423STCF7.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0423RMQSN</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">23.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">05:04:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-124.99</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">21.04.2015 S1K20CB9 21.04.2015 20:33:19 S1K20CB9 15415195269 Покупка товара 5329572000127705</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">расчеты по картам (С+, ACQ1)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29247827503747</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0423RMQSN.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">81</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">22.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">15:32:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">85.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">#091101#,#2240-85,00#,#За запр. картрiджа зг. рах. №11199/1 вiд 18.03.15 р. та дог.№
+               3/3 вiд 18.03.15 р. та акта вик. робiт №11199/1 вiд 18.03.15 р.#,#Без ПДВ#
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">22805810</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Ватутiнський мiський центр СССДМ</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">35418001024143</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">854018</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">HSKLF0422L1FCY.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">79</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">22.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">15:32:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">85.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">#091101#,#2240-85,00#,#За запр. картрiджа зг. рах. №11198/1 вiд 18.03.15 р. та дог.№
+               1/3 вiд 18.03.15 р. та акта вик. робiт №11198/1 вiд 18.03.15 р.#,#Без ПДВ#
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">22805810</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Ватутiнський мiський центр СССДМ</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">35418001024143</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">854018</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">HSKLF0422L1FCW.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">80</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">22.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">15:32:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">85.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">#091101#,#2240-85,00#,#За запр. картрiджа зг. рах. №11199 вiд 18.03.15 р. та дог.№
+               2/3 вiд 18.03.15 р. та акта вик. робiт №11199 вiд 18.03.15 р.#,#Без ПДВ#
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">22805810</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Ватутiнський мiський центр СССДМ</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">35418001024143</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">854018</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">HSKLF0422L1FCX.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">888</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">22.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">13:22:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">149.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Сплата за послуги по рахунку N14008 вiд 22.04.15р. Без ПДВ</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">2596320039</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Турчанов I.Г. ФОП</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">26008056204543</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">380269</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">JBKLF0422L1OO2.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0422VLL8B</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">22.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">05:18:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-251.37</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">21.04.2015 S1K30T5I 21.04.2015 12:01:06 S1K30T5I 15408995257 Покупка товара 5329572000127705</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">расчеты по картам (С+, ACQ1)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29247827503747</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0422VLL8B.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0422VLUD0</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">22.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">04:50:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-28.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">21.04.2015 S1K20J6H 21.04.2015 12:03:40 S1K20J6H 15409019108 Покупка товара 5329572000127705</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">расчеты по картам (С+, ACQ1)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29247827503747</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0422VLUD0.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0422VLPYY</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">22.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">04:37:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-53.50</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">17.04.2015 R0174263 17.04.2015 14:09:16 R0174263  Покупка товара 5329572000127705</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">РАСЧЕТЫ ПО EC/MC (Compass+ - эмиссия)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29245827503169</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0422VLPYY.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">142</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">21.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">10:19:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">104.30</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">сплата згiдно рахунку N13979 вiд 20.04.2015 за заправку картриджа HP CE278A</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">38826208</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">УГА ТОВ</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">26003052727690</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">300711</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">JBKLF0421L0IIA.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">700</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">20.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">18:12:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-135.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">За навчання Швайко О. В. за Квiтень 2015. СЗШ N99, 2-Б. Без ПДВ</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">04635922</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">УНIВЕР.ЕКОНОМ.ТА ПРАВА КРОК,ВНЗ</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">26006052712022</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">300711</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">JBKLF0420L3X61.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0420TIX6V</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">20.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">17:35:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-1100.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Перевод на карту ПриватБанка.  Пл-щик: Швайко Владимир Валериевич{{DAS=P24A774966585012504}}{{DAI=3067798}}{{DA20=2}}</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">3195515975</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Онуфрик В.I. ФОП</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">26053052723677</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">300711</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">SAMBF0420TIX6V.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0420SKBA0</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">20.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">01:49:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-0.21</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">19.04.2015 CS980R10 19.04.2015 11:21:38 CS980R10 27365182891 Эквайринговая комиссия
+               5329572000127705
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">КОМ.ЗА СН.НАЛ.С ПЛ.КАРТ П48(UAH) 8570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">61101908076402</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">320649</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0420SKBA0.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0419SDVB0</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">19.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">11:49:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-1000.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Перевод личных средств.  Пл-щик: Швайко Владимир Валериевич{{DAR=P24A722235745608333}}{{DAI=3067798}}{{DA20=2}}</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">СКС 'КРЕДИТНАЯ КАРТА'</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">26250090050329</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">320649</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">SAMBF0419SDVB0.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0419SCZJB</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">19.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">11:25:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-2988.51</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Перевод личных средств.  Пл-щик: Швайко Владимир Валериевич{{DAR=P24A721541701842913}}{{DAI=3067798}}{{DA20=2}}</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Транзитный счет для пополнения карт UA</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29241827519050</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">SAMBF0419SCZJB.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0419SCMBD</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">19.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">11:21:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-1.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">комиссия за расчетное обслуживание</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Доходы Приват24 рас/кас, грн</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">61109909409111</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">SAMBF0419SCMBD.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0419SCMBE</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">19.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">11:21:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-20.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">36322198: Списание за пополнение мобильной связи. Телефон:+380972462796. Дата: 2015-04-19T11:21:33.570+03:00.
+               IDPAY: P24A721422150409613{{DA20=2}}.
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Киевстар Пр24</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29026827010031</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">SAMBF0419SCMBE.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0419SJYQ0</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">19.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">05:23:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-30.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">18.04.2015 CAK20640 18.04.2015 10:06:11 CAK20640 15386091706 Эквайринговая комиссия
+               5329572000127705
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">КОМ.ЗА СН.НАЛ.С ПЛ.КАРТ П48(UAH) 8570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">61101908076402</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">320649</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0419SJYQ0.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0419SJYI4</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">19.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">05:23:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-101.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">18.04.2015 CTK26233 18.04.2015 16:09:05 CTK26233 15389346798 Покупка товара 5329572000127705</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">расчеты по картам (С+, ACQ2)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29245827503642</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0419SJYI4.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0419SJVO2</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">19.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">04:00:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-19.42</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">18.04.2015 S1K20BN6 18.04.2015 10:08:02 S1K20BN6 15386108488 Покупка товара 5329572000127705</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">расчеты по картам (С+, ACQ1)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29247827503747</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0419SJVO2.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0419SJYOA</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">19.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">03:32:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-4000.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">18.04.2015 CAK20640 18.04.2015 10:06:11 CAK20640 15386091706 Выдача наличных денег
+               5329572000127705
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">расчеты по картам (С+, ACQ2)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29245827503642</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0419SJYOA.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0419SJQSP</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">19.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">03:20:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-488.62</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">16.04.2015 S0158646 16.04.2015 16:07:42 S0158646  Покупка товара 5329572000127705</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">РАСЧЕТЫ ПО EC/MC (Compass+ - эмиссия)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29245827503169</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0419SJQSP.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0419SJOZW</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">19.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">03:01:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-46.05</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">17.04.2015 S0172425 17.04.2015 08:15:22 S0172425  Покупка товара 5329572000127705</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">РАСЧЕТЫ ПО EC/MC (Compass+ - эмиссия)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29245827503169</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0419SJOZW.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0418RITWC</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">18.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">05:52:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-26.25</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">17.04.2015 S1K20BGS 17.04.2015 08:19:55 S1K20BGS 15374417717 Покупка товара 5329572000127705</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">расчеты по картам (С+, ACQ1)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29247827503747</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0418RITWC.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">82</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">17.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">18:20:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">80.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">вiдновлення картриджа, згiдно рах-факт №13911, вiд 15.04.2015р., без ПДВ</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">37269653</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">"Редакцiя журналу "Цукор України" ТОВ</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">2600791801001</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">319092</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">HSKLF0417L2PY8.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">76</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">17.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">17:47:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">278.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Оплата за заправку картриджу згiдно р-ф 13854 вiд 09.04.15. Без ПДВ</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">36678659</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">ТОВ "Крафт  Лоєрс"</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">26005003514902</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">300131</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">HSKVF0417L00A4.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">39</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">17.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">16:01:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">285.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">#2755010#,#2240-285,00#,#опл.за запр.картриджiв#,#дог.№3,рах.№16, акту №16 вiд 10.04.2015#,#Без
+               ПДВ#.
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">36771718</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">ВДЗА у м.Ватутiному</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">35215026084758</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">854018</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">HSKLF0417L1T4O.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">135</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">17.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">13:36:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">2259.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">За заправку картриджiв. Дог. 2201/1 вiд 22.01.2015р. акт 13827 вiд 08.04.2015р. Без
+               ПДВ. За власнi кошти.
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">38948312</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">КНП `ЦПМСД №2`Шевченкiвського р-ну м.К</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">26008215906</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">320478</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">HSKLF0417L0ZKQ.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0417XI3YB</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">17.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">05:11:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-243.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">16.04.2015 S1K20CBC 16.04.2015 19:33:24 S1K20CBC 15372518532 Покупка товара 5329572000127705</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">расчеты по картам (С+, ACQ1)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29247827503747</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0417XI3YB.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">142</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">16.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">11:33:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">1300.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">*;26063587;Оплата за заправку картр.зг.з догов.№026-01/3 вiд 26.01.15р.,рах.№13755
+               вiд 16.04.15р. Уклад. договору не вимагає провед. процедур визначених Законом
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">26063587</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">УПФУ в Оболонському р-нi АУ</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">256033062611</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">322669</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">HSKLF0416L0GID.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">160</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">15.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">18:03:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">3315.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">ОПЛАТА ЗА ВIДНОВЛЕННЯ КАРТРИДЖIВ ЗГIДНО РАХ.-ФАКТ.N 13677/3 ВIД 15.04.2015 Р. ТА ДОГ.N4
+               ВIД 19.01.2015 Р. БЕЗ ПДВ.
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">22869431</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">УПФУ в Святошинському р-нi м.Киева</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">256003062612</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">322669</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">HSKLF0415L2IL6.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">81</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">15.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">17:05:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">129.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">заправка картриджа, згiдно ра-факт № 13911, вiд 15.04.2015, без ПДВ</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">37269653</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">"Редакцiя журналу "Цукор України" ТОВ</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">2600791801001</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">319092</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">HSKLF0415L25Q7.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0415RGG5A</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">15.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">05:03:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-10000.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14.04.2015 CAKI1856 14.04.2015 15:05:39 CAKI1856 15349298017 Выдача наличных денег
+               5329572000127705
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">расчеты по картам (С+, ACQ2)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29245827503642</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0415RGG5A.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0415RGG5B</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">15.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">05:03:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-75.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14.04.2015 CAKI1856 14.04.2015 15:05:39 CAKI1856 15349298017 Эквайринговая комиссия
+               5329572000127705
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">КОМ.ЗА СН.НАЛ.С ПЛ.КАРТ П48(UAH) 8570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">61101908076402</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">320649</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0415RGG5B.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0415RGE4D</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">15.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">05:02:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-8000.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14.04.2015 CAK26620 14.04.2015 14:58:43 CAK26620 15349215820 Выдача наличных денег
+               5329572000127705
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">расчеты по картам (С+, ACQ2)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29245827503642</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0415RGE4D.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0415RGE4E</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">15.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">05:02:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-60.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14.04.2015 CAK26620 14.04.2015 14:58:43 CAK26620 15349215820 Эквайринговая комиссия
+               5329572000127705
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">КОМ.ЗА СН.НАЛ.С ПЛ.КАРТ П48(UAH) 8570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">61101908076402</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">320649</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0415RGE4E.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0415RGDG5</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">15.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">05:01:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-6000.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14.04.2015 CAK26620 14.04.2015 14:59:42 CAK26620 15349226896 Выдача наличных денег
+               5329572000127705
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">расчеты по картам (С+, ACQ2)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29245827503642</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0415RGDG5.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0415RGDG6</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">15.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">05:01:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-45.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14.04.2015 CAK26620 14.04.2015 14:59:42 CAK26620 15349226896 Эквайринговая комиссия
+               5329572000127705
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">КОМ.ЗА СН.НАЛ.С ПЛ.КАРТ П48(UAH) 8570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">61101908076402</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">320649</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0415RGDG6.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0415RG8JJ</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">15.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">04:11:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-8000.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14.04.2015 CAK26620 14.04.2015 14:56:32 CAK26620 15349191206 Выдача наличных денег
+               5329572000127705
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">расчеты по картам (С+, ACQ2)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29245827503642</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0415RG8JJ.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0415RG8JK</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">15.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">04:11:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-60.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14.04.2015 CAK26620 14.04.2015 14:56:32 CAK26620 15349191206 Эквайринговая комиссия
+               5329572000127705
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">КОМ.ЗА СН.НАЛ.С ПЛ.КАРТ П48(UAH) 8570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">61101908076402</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">320649</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0415RG8JK.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0415RG4OJ</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">15.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">03:50:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-8000.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14.04.2015 CAK26620 14.04.2015 14:57:37 CAK26620 15349202566 Выдача наличных денег
+               5329572000127705
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">расчеты по картам (С+, ACQ2)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29245827503642</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0415RG4OJ.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0415RG4OK</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">15.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">03:50:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-60.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14.04.2015 CAK26620 14.04.2015 14:57:37 CAK26620 15349202566 Эквайринговая комиссия
+               5329572000127705
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">КОМ.ЗА СН.НАЛ.С ПЛ.КАРТ П48(UAH) 8570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">61101908076402</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">320649</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0415RG4OK.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0415RG375</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">15.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">03:36:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-60000.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14.04.2015 BK3O6H02 14.04.2015 15:20:54 BK3O6H02 15349487349 Выдача наличных денег
+               5329572000127705
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">расчеты по картам (С+, ACQ1)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29247827503747</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0415RG375.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0415RG376</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">15.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">03:36:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-450.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14.04.2015 BK3O6H02 14.04.2015 15:20:54 BK3O6H02 15349487349 Эквайринговая комиссия
+               5329572000127705
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">КОМ.ЗА СН.НАЛ.С ПЛ.КАРТ П48(UAH) 8570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">61101908076402</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">320649</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0415RG376.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0415RG33Y</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">15.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">03:35:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-225.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14.04.2015 CP980B48 14.04.2015 15:51:31 CP980B48 27354780493 Эквайринговая комиссия
+               5329572000127705
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">КОМ.ЗА СН.НАЛ.С ПЛ.КАРТ П48(UAH) 8570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">61101908076402</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">320649</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0415RG33Y.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0414FH40W</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">15:51:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-30000.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Видача готiвки за платiжними картками (особистими та корпоративними) через банкомати
+               та каси бан [SAMDN04000190028563]
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">3252710263</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Каса Приватбанку Кедь А А</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">10026052601280</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">320649</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">SAMBF0414FH40W.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0412GETKY</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">12.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">04:11:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-694.93</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">09.04.2015 S0175746 09.04.2015 09:08:28 S0175746  Покупка товара 5329572000127705</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">РАСЧЕТЫ ПО EC/MC (Compass+ - эмиссия)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29245827503169</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0412GETKY.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0412GEQCI</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">12.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">03:51:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-40.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">09.04.2015 20900729 09.04.2015 08:36:36 20900729  Покупка товара 5329572000127705</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">РАСЧЕТЫ ПО EC/MC (Compass+ - эмиссия)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29245827503169</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0412GEQCI.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0411TDL7Y</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">11.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">05:30:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-20000.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">10.04.2015 CAK21191 10.04.2015 13:53:25 CAK21191 15323948296 Выдача наличных денег
+               5329572000127705
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">расчеты по картам (С+, ACQ2)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29245827503642</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0411TDL7Y.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0411TDL7Z</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">11.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">05:30:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-150.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">10.04.2015 CAK21191 10.04.2015 13:53:25 CAK21191 15323948296 Эквайринговая комиссия
+               5329572000127705
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">КОМ.ЗА СН.НАЛ.С ПЛ.КАРТ П48(UAH) 8570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">61101908076402</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">320649</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0411TDL7Z.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">198</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">10.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">17:05:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">65.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">#010116#,#2240-65,00#,#заправка катриджа#,# договiр №3,рахунок ,акт виконаних робiт№7305
+               вiд 22.01.2014р.#,#Без ПДВ#кред заб
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">04060832</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Виконавчий комiтет Ватутiнської МР</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">35413001045019</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">854018</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">HSKLF0410L2ACE.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">196</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">10.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">17:05:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">85.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">#010116#,#2240-85,00#,#заправка катриджа#,# договiр №6,рахунок ,акт виконаних робiт№210115
+               вiд 26.01.2015р.#,#Без ПДВ#
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">04060832</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Виконавчий комiтет Ватутiнської МР</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">35413001045019</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">854018</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">HSKLF0410L2ACQ.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">197</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">10.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">17:05:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">85.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">#010116#,#2240-85,00#,#заправка катриджа#,# договiр №89,рахунок ,акт виконаних робiт№11479
+               вiд 28.10.2014р.#,#Без ПДВ#кред заб
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">04060832</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Виконавчий комiтет Ватутiнської МР</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">35413001045019</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">854018</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">HSKLF0410L2ACR.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">199</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">10.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">17:05:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">468.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">#010116#,#2240-468,00#,#вiдновлення катриджа#,# договiр №62,рахунок ,акт виконаних
+               робiт№10777 вiд 16.09.2014р.#,#Без ПДВ#кред заб
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">04060832</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Виконавчий комiтет Ватутiнської МР</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">35413001045019</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">854018</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">HSKLF0410L2ACS.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">203</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">10.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">17:05:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">459.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">#010116#,#2240-459,00#,#заправка тавiдновлення катриджа#,# договiр №18,рахунок ,акт
+               виконаних робiт№7809 вiд 07.03.2014р.#,#Без ПДВ#кред заб
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">04060832</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Виконавчий комiтет Ватутiнської МР</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">35413001045019</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">854018</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">HSKLF0410L2ACW.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">204</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">10.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">17:05:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">85.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">#010116#,#2240-85,00#,#заправка катриджа#,# договiр №7,рахунок ,акт виконаних робiт
+               №12965 вiд 16.02.2015р.#,#Без ПДВ#
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">04060832</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Виконавчий комiтет Ватутiнської МР</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">35413001045019</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">854018</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">HSKLF0410L2ACX.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">206</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">10.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">17:05:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">95.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">#010116#,#2240-95,00#,#заправка катриджа#,# договiр №26,рахунок ,акт виконаних робiт№11
+               вiд 26.03.2015р.#,#Без ПДВ#
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">04060832</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Виконавчий комiтет Ватутiнської МР</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">35413001045019</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">854018</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">HSKLF0410L2ACZ.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">195</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">10.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">17:05:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">85.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">#010116#,#2240-85,00#,#заправка катриджа#,# договiр №5,рахунок ,акт виконаних робiт№12637
+               вiд 22.01.2015р.#,#Без ПДВ#
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">04060832</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Виконавчий комiтет Ватутiнської МР</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">35413001045019</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">854018</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">HSKLF0410L2ACP.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">200</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">10.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">17:05:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">65.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">#010116#,#2240-65,00#,#заправка катриджа#,# договiр №12,рахунок ,акт виконаних робiт№7569
+               вiд 13.02.2014р.#,#Без ПДВ#кред заб
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">04060832</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Виконавчий комiтет Ватутiнської МР</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">35413001045019</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">854018</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">HSKLF0410L2ACT.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">201</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">10.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">17:05:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">189.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">#010116#,#2240-189,00#,#вiдновлення катриджа#,# договiр №13,рахунок ,акт виконаних
+               робiт№7716 вiд 17.02.2014р.#,#Без ПДВ#кред заб
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">04060832</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Виконавчий комiтет Ватутiнської МР</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">35413001045019</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">854018</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">HSKLF0410L2ACU.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">202</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">10.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">17:05:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">174.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">#010116#,#2240-174,00#,#вiдновлення катриджа#,# договiр №34,рахунок ,акт виконаних
+               робiт№9175 вiд 06.06.2014р.#,#Без ПДВ#кред заб
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">04060832</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Виконавчий комiтет Ватутiнської МР</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">35413001045019</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">854018</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">HSKLF0410L2ACV.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">205</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">10.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">17:05:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">170.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">#010116#,#2240-170,00#,#заправка катриджа#,# договiр №8,рахунок ,акт виконаних робiт№12953
+               вiд 19.02.2015р.#,#Без ПДВ#
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">04060832</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Виконавчий комiтет Ватутiнської МР</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">35413001045019</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">854018</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">HSKLF0410L2ACY.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">3801</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">10.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">15:17:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">131950.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Оплата за послуги згiдно договору №77/2 вiд 01.12.2011р. Без НДС.</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">37072332</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">ТОВ `Iгнайт Україна`</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">26002000048197</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">300023</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">HSKLF0410L1CUT.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">136</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">10.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">09:37:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">104.30</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">сплата згiдно рахунку N13812 вiд 07.04.2015 за заправку картриджа HP CE278A Без ПДВ</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">38826208</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">УГА ТОВ</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">26003052727690</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">300711</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">JBKLF0410L08X3.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0410RCU8M</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">10.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">04:55:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-54.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">07.04.2015 20901154 07.04.2015 21:45:50 20901154  Покупка товара 5329572000127705</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">РАСЧЕТЫ ПО EC/MC (Compass+ - эмиссия)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29245827503169</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0410RCU8M.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">72</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">09.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">13:02:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">80.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">ЗАПРВКА КАРТРИДЖА вiд ПОБIЯНСЬКА НЕЛЛI БОРИСIВНА</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14305909</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">"РБ АВАЛЬ"транз.рах.по плат.через сист</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">2924858</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">300335</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">HSKLF0409L0PSN.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0409VBO31</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">09.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">05:08:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-364.55</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">08.04.2015 S1K20KQV 08.04.2015 18:19:48 S1K20KQV 15305647157 Покупка товара 5329572000127705</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">расчеты по картам (С+, ACQ1)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29247827503747</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0409VBO31.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0409VBUU9</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">09.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">04:44:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-1229.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">07.04.2015 SKK30SQW 07.04.2015 20:11:57 SKK30SQW 15296136804 Покупка товара 5329572000127705</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">расчеты по картам (С+, ACQ1)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29247827503747</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0409VBUU9.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0409VBSO4</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">09.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">04:35:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-59.81</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">07.04.2015 S0172425 07.04.2015 08:26:46 S0172425  Покупка товара 5329572000127705</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">РАСЧЕТЫ ПО EC/MC (Compass+ - эмиссия)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29245827503169</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0409VBSO4.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0408TB9NO</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">08.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">04:40:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-194.01</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">07.04.2015 S1K30LWS 07.04.2015 16:39:40 S1K30LWS 15293647336 Покупка товара 5329572000127705</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">расчеты по картам (С+, ACQ1)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29247827503747</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0408TB9NO.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">890</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">07.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">16:45:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">508.30</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">оплата за заправку картриджiв зг. з р\ф 13746 вiд 02.04.15 р. Без ПДВ. Сплач. за кошти
+               "Pact Inc", пр. Street Smart.
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">34493231</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">ВБО УIДПГЗ</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">26000011011988</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">300023</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">HSKLF0407L1R7R.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0407RA1W3</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">07.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">02:25:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-997.11</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">03.04.2015 S0175751 03.04.2015 21:40:11 S0175751  Покупка товара 5329572000127705</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">РАСЧЕТЫ ПО EC/MC (Compass+ - эмиссия)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29245827503169</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0407RA1W3.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">2</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">06.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14:18:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">380.80</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">За вiдновлення та заправку картриджа рах N13766 вiд 03.04.15р. Без ПДВ</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">39233200</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">ЛЕГАЛ СОЛЮШНЗ ТОВ</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">26002052742881</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">300711</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">JBKLF0406L2A9H.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">1194</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">06.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">12:43:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">1228.80</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Оплата заправки картриджа согласно счета N 13738 от 02.04.2015 Без ПДВ</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">24639623</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">ГОЛОВАНЬ I ПАРТНЕРИ АО</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">26000051813321</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">335496</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">JBKLF0406L1N84.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">695</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">06.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">12:11:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-977.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">товар згiдно рахунку N СФ-00000064 Вiд 3 Квiтня 2015 р. без ПДВ</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">36948420</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">УЛЬТРАДРУК, ТОВ</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">26008060741263</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">320649</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">JBKLF0406L1ENV.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">694</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">06.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">12:11:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-500.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Оплата за послуги зв'язку на особовий рахунок N 6445120, згiдно з договором N 1-664/14
+               вiд 15.05.2014 р.
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">21673832</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">ПрАТ Київстар</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">26008010065101</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">300346</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">JBKLF0406L1ER7.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">0406L1ER7Y</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">06.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">12:11:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-3.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Комiсiя за дебетовий платiж N 694 вiд 06.04.2015 по рахунку, згiдно договору банкiвського
+               рахунку N K2v4K20E3C вiд 27.12.2005 без ПДВ
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">ДОХОДЫ ЗА ДТ ТРАНЗАКЦИИ K2V4</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">61106918476451</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">320649</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">JBKLF0406L1ER7.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">696</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">06.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">12:11:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-762.45</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Повернення помилково сплачених коштiв згiдно платiжного доручення N 1181 вiд 02.04.2015.
+               Без ПДВ
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">24639623</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">ГОЛОВАНЬ I ПАРТНЕРИ АО</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">26000051813321</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">335496</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">JBKLF0406L1EOZ.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">107</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">03.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">16:52:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">374.40</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">#080400#,#2240#,#За заправку та вiдновлення картриджiв#,#Зг. акту№13617 вiд 24.03.2015р.
+               Договiр №240315/1 вiд 24.03.2015р.#,#Без ПДВ#
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">33195426</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">КЗ КОР "КОЦС"</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">35413001015221</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">821018</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">HSKLF0403L1XSR.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">F0403Y79EN</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">03.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">07:25:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-1093.24</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">30.03.2015 S0143051 30.03.2015 11:28:24 S0143051  Покупка товара 5329572000127705</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">РАСЧЕТЫ ПО EC/MC (Compass+ - эмиссия)</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">29245827503169</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">305299</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">COIEF0403Y79EN.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">135</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">02.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">13:05:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">104.30</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">сплата згiдно рахунку N13731 вiд 01.04.2015 за заправку картриджа HP CE278A. Без ПДВ</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">38826208</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">УГА ТОВ</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">26003052727690</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">300711</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">JBKLF0402L1APA.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">1181</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">02.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">12:45:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">762.45</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Оплата заправки картриджа согласно счета N 13746 от 02.04.2015 Без ПДВ</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">24639623</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">ГОЛОВАНЬ I ПАРТНЕРИ АО</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">26000051813321</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">335496</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">JBKLF0402L1797.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">1524</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">02.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">10:31:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">399.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">оплата за заправку катрiджу зг. рах. N 13742 вiд 02.04.2015 .</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">38569246</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">МАНIВЕО ШВИДКА ФIНАНСОВА ДОПОМОГА ТОВ</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">26503052700968</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">300711</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">JBKLF0402L0G67.</td>
+         </tr>
+         <tr class="xl24">
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">AS53v19a4p</td>
+            <td class="xl30" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">01.04.2015</td>
+            <td class="xl31" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">10:11:00</td>
+            <td class="xl32" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">-100.00</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">UAH</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">Комiсiя за обслуговування рахунку березень 2015р. згiдно договору банкiвського рахунку
+               вiд 27.12.2005, без ПДВ
+            </td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">14360570</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">ДОХ ЗА ОБСЛ СЧ КЛИЕНТ-БАНК K2V4</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">61105918176462</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">320649</td>
+            <td class="xl29" style="border-left:0.5pt solid windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid windowtext;">TZ00F0401BB32J.</td>
+         </tr>
+         <tr class="xl24">
+            <th class="xl25">№</th>
+            <th class="xl25">Дата проводки</th>
+            <th class="xl25">Час проводки</th>
+            <th class="xl25" nowrap>Сума</th>
+            <th class="xl25">Валюта</th>
+            <th class="xl26">Призначення платежу</th>
+            <th class="xl25">ЄДРПОУ контрагента</th>
+            <th class="xl25">Назва контрагента</th>
+            <th class="xl25">Рахунок контрагента</th>
+            <th class="xl25">МФО контрагента</th>
+            <th class="xl27">Референс</th>
+         </tr>
+      </table>
+   </body>
+</html>

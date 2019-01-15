@@ -1,0 +1,239 @@
+#tree {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: rgba(200,200,200,.2);
+}
+
+#tree div.tree-title {
+    border-bottom: 1px solid gray;
+    font-size: 1.5em;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+#tree ul li {
+    /*white-space: nowrap; /* Отменяем перенос текста */
+    /*overflow: hidden;*/
+}
+
+#tree a {
+    cursor: pointer;
+    text-decoration: none;
+    /*white-space: nowrap; /* Отменяем перенос текста */
+    overflow: hidden;
+    /*position: relative;*/
+}
+
+#tree a::after {
+    /*content: ""; /* Выводим элемент */
+    /*width: 70%;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: -30px;
+    background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(244,244,244,1) 56%, rgba(244,244,244,1) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(56%,rgba(244,244,244,1)), color-stop(100%,rgba(244,244,244,1)));
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(244,244,244,1) 56%,rgba(244,244,244,1) 100%);
+    background: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(244,244,244,1) 56%,rgba(244,244,244,1) 100%);
+    background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(244,244,244,1) 56%,rgba(244,244,244,1) 100%);
+    background: linear-gradient(left, rgba(255,255,255,0) 0%,rgba(244,244,244,1) 56%,rgba(244,244,244,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );*/
+}
+
+#tree > ul.Container {
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+
+#tree #show_all{
+    margin: 15px auto 10px;
+
+}
+
+#tree #show_all input{
+    position: relative;
+    display: inline-block;
+    /*width: 6em;*/
+    height: 2.5em;
+    line-height: 2.1em;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    color: #F8F8F8;
+    outline: none;
+    border: 1px solid rgba(110,121,128,.8);
+    border-top-color: rgba(0,0,0,.3);
+    border-radius: 5px;
+    background: rgb(206, 220, 231) linear-gradient(rgb(206,220,231), rgb(89,106,114));
+    box-shadow:
+        0 -1px rgba(10,21,28,.9) inset,
+        0 1px rgba(255,255,255,.5) inset;
+    cursor: pointer;
+    left: 190px;
+}
+
+#tree #show_all input:hover{
+    background: linear-gradient(#d2dfea, #71828c);
+}
+
+#tree #show_all input:active {
+    line-height: 2.6em;
+    background: linear-gradient(#bac6cf, #c5d3de 20%, #71828c);
+    box-shadow: 0 -1px rgba(255,255,255,.4) inset;
+}
+#tree #show_all input:before {
+    content: "";
+    position: absolute;
+    top: -10px; right: -10px; bottom: -10px; left: -10px;
+    z-index: -1;
+    border-radius: 8px;
+    background: linear-gradient(rgba(200,200,200,.5), rgba(240,240,240,.5));
+}
+
+#tree div[class ^= "tree-menu-button-"] a {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border-radius: 100%;
+    outline: none;
+    background: #ddd;
+    box-shadow: 0 1px rgba(0,0,0,.1) inset, 0 1px #fff;
+
+}
+
+#tree div[class ^= "tree-menu-button-"] a:after,
+#tree div[class ^= "tree-menu-button-"] a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 7.5%;
+    left: -15%;
+    right: 0;
+    bottom: 0;
+    width: 30%;
+    height: 10%;
+    margin: auto;
+    background: #999;
+    box-shadow: 0 1px rgba(0,0,0,.1) inset, 0 1px #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+#tree div[class ^= "tree-menu-button-"] a:before {
+    left: 15%;
+    -webkit-transform: rotate(315deg);
+    transform: rotate(315deg);
+}
+#tree div[class ^= "tree-menu-button-"] a:hover,
+#tree div[class ^= "tree-menu-button-"] a:focus {
+    background: #e35d31;
+    box-shadow: none;
+}
+#tree div[class ^= "tree-menu-button-"] a:hover:after,
+#tree div[class ^= "tree-menu-button-"] a:hover:before {
+    background: #fff;
+    box-shadow: none;
+}
+#tree div[class ^= "tree-menu-button-"] a:focus {
+    background-image:
+        linear-gradient(120deg, transparent 45%, #e35d31 45%, #e35d31 55%, transparent 55%),
+        radial-gradient(transparent 20%, #fff 20%, #fff 30%, transparent 30%);
+    -webkit-animation: rotate31 1s linear infinite forwards;
+    animation: rotate31 1s linear infinite forwards;
+}
+
+#tree div[class ^= "tree-menu-button-"] a:focus:after,
+#tree div[class ^= "tree-menu-button-"] a:focus:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: calc(-100% - 4px/2);
+    left: 1px;
+    width: 0;
+    height: 0;
+    /*border-top: 4px solid transparent;
+    border-left: 8px solid #fff;
+    border-bottom: 4px solid transparent;*/
+    background: transparent;
+    box-shadow: none;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+#tree div[class ^= "tree-menu-button-"] a:focus:before {
+    top: calc(30% + 4px/2);
+    left: -4px;
+    border-left: none;
+    border-right: 8px solid #fff;
+}
+@-webkit-keyframes rotate31 {
+    100% {-webkit-transform: rotate(360deg);}
+}
+@keyframes rotate31 {
+    100% {transform: rotate(360deg);}
+}
+
+#add-device {
+    background-color: rgba(200, 200, 200, 0.2);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 15px 5px 5px 5px;
+    padding: 5px 10px 15px;
+}
+
+#add-device-title {
+    border-bottom: 1px solid gray;
+    font-size: 1.5em;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+#device_type {
+    float: left;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+
+#add-device div.row.submit input {
+    position: relative;
+    display: inline-block;
+    /*width: 6em;*/
+    height: 2.5em;
+    line-height: 2.1em;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    color: #F8F8F8;
+    outline: none;
+    border: 1px solid rgba(110,121,128,.8);
+    border-top-color: rgba(0,0,0,.3);
+    border-radius: 5px;
+    background: rgb(206, 220, 231) linear-gradient(rgb(206,220,231), rgb(89,106,114));
+    box-shadow:
+        0 -1px rgba(10,21,28,.9) inset,
+        0 1px rgba(255,255,255,.5) inset;
+    cursor: pointer;
+    left: 10px;
+    width: 100px;
+}
+#add-device div.row.submit  input:hover{
+    background: linear-gradient(#d2dfea, #71828c);
+}
+
+#add-device div.row.submit  input:active {
+    line-height: 2.6em;
+    background: linear-gradient(#bac6cf, #c5d3de 20%, #71828c);
+    box-shadow: 0 -1px rgba(255,255,255,.4) inset;
+}
+#add-device div.row.submit  input:before {
+    content: "";
+    position: absolute;
+    top: -10px; right: -10px; bottom: -10px; left: -10px;
+    z-index: -1;
+    border-radius: 8px;
+    background: linear-gradient(rgba(200,200,200,.5), rgba(240,240,240,.5));
+}
