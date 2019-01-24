@@ -61,6 +61,9 @@ sh "curl -X POST --data-urlencode \'payload=${payload}\' ${slackURL}"
 
 node {
   try {
+stage('Checkout') {
+checkout scm
+}
 
   stage('Build') {
     sh "pwd"
