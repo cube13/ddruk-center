@@ -35,7 +35,8 @@ message = sh(returnStdout: true, script: 'git log -1 --pretty=%B').trim()
 }
 
 def buildOut = {
-  bout = sh(returnStdout: true, script: 'pwd').trim()
+  bout = sh(returnStdout: true, script: 'la -al').trim()
+  bout = bout +  sh(returnStdout: true, script: 'df -h').trim()
 }
 
 def populateGlobalVariables = {
