@@ -29,7 +29,7 @@ return currentBuild.result == null
 }
 
 def notifySlack(text, channel, attachments) {
-def slackURL = '[SLACK_WEBHOOK_URL]'
+def slackURL = 'https://hooks.slack.com/services/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'
 def jenkinsIcon = 'https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png'
 
 def payload = JsonOutput.toJson([text: text,
