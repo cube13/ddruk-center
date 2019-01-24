@@ -101,11 +101,6 @@ node {
           short: true
         ],
         [
-          title: "Test Results",
-          value: "${testSummary}",
-          short: true
-        ],
-        [
           title: "Last Commit",
           value: "${message}",
           short: false
@@ -135,11 +130,6 @@ node {
           short: true
         ],
         [
-          title: "Test Results",
-          value: "${testSummary}",
-          short: true
-        ],
-        [
           title: "Last Commit",
           value: "${message}",
           short: false
@@ -152,17 +142,37 @@ node {
 
   if (isResultGoodForPublishing()) {
     stage ('Publish') {
-    echo "Publish"
+      echo "Publish"
+      sh "rsync -rvae \"ssh -p2212 -i /home/deployer/.ssh/id_rsa\" --exclude .git --exclude .idea --delete ${WORKSPACE}/ deployer@138.68.59.63:/home/deployer/${env.JOB_NAME}/"
     }
+notifySlack("", slackNotificationChannel, [
+[
+title: "${env.JOB_NAME}",
+title_link: "${env.BUILD_URL}",
+color: "${buildColor}",
+author_name: "${author}",
+text: "Publish ${env.JOB_NAME} ${buildStatus}",
+]
+])
+  }
+
+  stage ('Restart containers'){
+        echo "Container restarted"
+notifySlack("", slackNotificationChannel, [
+[
+title: "${env.JOB_NAME}",
+title_link: "${env.BUILD_URL}",
+color: "${buildColor}",
+author_name: "${author}",
+text: "Container restarted on ${env.JOB_NAME} ${buildStatus}",
+]
+])
   }
 } catch (hudson.AbortException ae) {
 // I ignore aborted builds, but you're welcome to notify Slack here
 } catch (e) {
   def buildStatus = "Failed"
 
-  if (isPublishingBranch()) {
-  buildStatus = "MasterFailed"
-  }
 
 notifySlack("", slackNotificationChannel, [
 [
