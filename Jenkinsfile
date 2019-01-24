@@ -71,6 +71,7 @@ notifySlack("Start", slackNotificationChannel, [
 //title: "${env.JOB_NAME}",
 //title_link: "${env.BUILD_URL}"
 author_name: "${author}",
+        fuilds:
 [
 title: "Last Commit",
 value: "${message}",
