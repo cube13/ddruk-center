@@ -73,7 +73,7 @@ node {
     def jobName = "${env.JOB_NAME}"
 
     // Strip the branch name out of the job name (ex: "Job Name/branch1" -> "Job Name")
-    jobName = jobName.getAt(0..(jobName.indexOf('/') - 1))
+//    jobName = jobName.getAt(0..(jobName.indexOf('/') - 1))
 
     if (currentBuild.result != null) {
       buildStatus = "Failed"
@@ -120,6 +120,7 @@ node {
         color: "${buildColor}",
         author_name: "${author}",
         text: "${buildStatus}\n${author}",
+        "mrkdwn_in": ["fields"],
         fields: [
         [
           title: "Branch",
