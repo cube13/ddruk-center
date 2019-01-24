@@ -27,6 +27,20 @@ return env.GIT_BRANCH == 'origin/master' || env.GIT_BRANCH =~ /release.+/
 def isResultGoodForPublishing = {->
 return currentBuild.result == null
 }
+def getGitAuthor = {
+def commit = sh(returnStdout: true, script: 'git rev-parse HEAD')
+author = sh(returnStdout: true, script: "git --no-pager show -s --format='%an' ${commit}").trim()
+}
+
+def getLastCommitMessage = {
+message = sh(returnStdout: true, script: 'git log -1 --pretty=%B').trim()
+}
+
+
+def populateGlobalVariables = {
+getLastCommitMessage()
+getGitAuthor()
+}
 
 def notifySlack(text, channel, attachments) {
 def slackURL = 'https://hooks.slack.com/services/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'
@@ -43,20 +57,7 @@ attachments: attachments
 sh "curl -X POST --data-urlencode \'payload=${payload}\' ${slackURL}"
 }
 
-def getGitAuthor = {
-def commit = sh(returnStdout: true, script: 'git rev-parse HEAD')
-author = sh(returnStdout: true, script: "git --no-pager show -s --format='%an' ${commit}").trim()
-}
 
-def getLastCommitMessage = {
-message = sh(returnStdout: true, script: 'git log -1 --pretty=%B').trim()
-}
-
-
-def populateGlobalVariables = {
-getLastCommitMessage()
-getGitAuthor()
-}
 
 node {
   try {
