@@ -66,6 +66,14 @@ node {
   try {
 stage('Checkout') {
 checkout scm
+notifySlack("Start", slackNotificationChannel, [
+[
+title: "${env.JOB_NAME}",
+title_link: "${env.BUILD_URL}",
+color: "${buildColor}"
+//author_name: "${author}",
+]
+])
 }
 
   stage('Build') {
@@ -74,7 +82,7 @@ checkout scm
     def buildColor = currentBuild.result == null ? "good": "warning"
     def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
     def jobName = "${env.JOB_NAME}"
-    buildout
+    b=buildout
 
     // Strip the branch name out of the job name (ex: "Job Name/branch1" -> "Job Name")
 //    jobName = jobName.getAt(0..(jobName.indexOf('/') - 1))
@@ -134,7 +142,7 @@ checkout scm
           short: false
         ],
         [
-                value: "```${buildout}```"
+                value: "```${b}```"
         ]
         ]
       ]
