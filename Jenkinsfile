@@ -55,9 +55,7 @@ sh "curl -X POST --data-urlencode \'payload=${payload}\' ${slackURL}"
 }
 
 def buildout = {
-  bout = sh(returnStdout: true, script: 'pwd').trim()
-bout = bout + sh(returnStdout: true, script: 'ls -al').trim()
-bout = bout + sh(returnStdout: true, script: 'df -h').trim()
+  def bout = sh(returnStdout: true, script: 'pwd').trim()
 }
 
 
@@ -82,7 +80,7 @@ title_link: "${env.BUILD_URL}"
     def buildColor = currentBuild.result == null ? "good": "warning"
     def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
     def jobName = "${env.JOB_NAME}"
-    b=buildout
+    buildout()
 
     // Strip the branch name out of the job name (ex: "Job Name/branch1" -> "Job Name")
 //    jobName = jobName.getAt(0..(jobName.indexOf('/') - 1))
@@ -142,7 +140,7 @@ title_link: "${env.BUILD_URL}"
           short: false
         ],
         [
-                value: "```${b}```"
+                value: "```${bout}```"
         ]
         ]
       ]
