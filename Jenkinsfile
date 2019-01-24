@@ -134,7 +134,7 @@ checkout scm
           short: false
         ],
         [
-                value: "```${bout}```"
+                value: "```${buildout}```"
         ]
         ]
       ]
