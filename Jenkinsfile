@@ -145,6 +145,8 @@ node {
       echo "Publish"
       sh "rsync -rvae \"ssh -p2212 -i /home/deployer/.ssh/id_rsa\" --exclude .git --exclude .idea --delete ${WORKSPACE}/ deployer@138.68.59.63:/home/deployer/${env.JOB_NAME}/"
     }
+def buildColor = currentBuild.result == null ? "good": "warning"
+def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
 notifySlack("", slackNotificationChannel, [
 [
 title: "${env.JOB_NAME}",
@@ -158,6 +160,8 @@ text: "Publish ${env.JOB_NAME} ${buildStatus}",
 
   stage ('Restart containers'){
         echo "Container restarted"
+def buildColor = currentBuild.result == null ? "good": "warning"
+def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
 notifySlack("", slackNotificationChannel, [
 [
 title: "${env.JOB_NAME}",
@@ -182,21 +186,6 @@ color: "danger",
 author_name: "${author}",
 text: "${buildStatus}",
 fields: [
-[
-title: "Branch",
-value: "${env.GIT_BRANCH}",
-short: true
-],
-[
-title: "Test Results",
-value: "${testSummary}",
-short: true
-],
-[
-title: "Last Commit",
-value: "${message}",
-short: false
-],
 [
 title: "Error",
 value: "${e}",
