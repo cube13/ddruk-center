@@ -19,7 +19,7 @@ def testSummary = ""
 def total = 0
 def failed = 0
 def skipped = 0
-
+def bout = 0
 
 def isResultGoodForPublishing = {->
 return currentBuild.result == null
@@ -33,6 +33,9 @@ def getLastCommitMessage = {
 message = sh(returnStdout: true, script: 'git log -1 --pretty=%B').trim()
 }
 
+def buildOut = {
+  bout = sh(returnStdout: true, script: 'pwd').trim()
+}
 
 def populateGlobalVariables = {
 getLastCommitMessage()
@@ -54,9 +57,7 @@ def notifySlack(text, channel, attachments) {
 sh "curl -X POST --data-urlencode \'payload=${payload}\' ${slackURL}"
 }
 
-def buildout = {
-  def bout = sh(returnStdout: true, script: 'pwd').trim()
-}
+
 
 
 
@@ -64,12 +65,17 @@ node {
   try {
 stage('Checkout') {
 checkout scm
-
+populateGlobalVariables()
 notifySlack("Start", slackNotificationChannel, [
 [
-title: "${env.JOB_NAME}",
-title_link: "${env.BUILD_URL}"
-//author_name: "${author}",
+//title: "${env.JOB_NAME}",
+//title_link: "${env.BUILD_URL}"
+author_name: "${author}",
+[
+title: "Last Commit",
+value: "${message}",
+short: false
+]
 ]
 ])
 }
@@ -125,7 +131,6 @@ title_link: "${env.BUILD_URL}"
         title: "${jobName}, build #${env.BUILD_NUMBER}",
         title_link: "${env.BUILD_URL}",
         color: "${buildColor}",
-        author_name: "${author}",
         text: "${buildStatus}\n${author}",
         "mrkdwn_in": ["fields"],
         fields: [
