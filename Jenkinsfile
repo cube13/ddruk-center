@@ -66,11 +66,11 @@ node {
   try {
 stage('Checkout') {
 checkout scm
+
 notifySlack("Start", slackNotificationChannel, [
 [
 title: "${env.JOB_NAME}",
-title_link: "${env.BUILD_URL}",
-color: "${buildColor}"
+title_link: "${env.BUILD_URL}"
 //author_name: "${author}",
 ]
 ])
