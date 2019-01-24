@@ -71,7 +71,7 @@ notifySlack("Start", slackNotificationChannel, [
 //title: "${env.JOB_NAME}",
 //title_link: "${env.BUILD_URL}"
 author_name: "${author}",
-        fuilds:
+fields:
 [
 title: "Last Commit",
 value: "${message}",
@@ -87,7 +87,7 @@ short: false
     def buildColor = currentBuild.result == null ? "good": "warning"
     def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
     def jobName = "${env.JOB_NAME}"
-    buildout()
+    buildOut()
 
     // Strip the branch name out of the job name (ex: "Job Name/branch1" -> "Job Name")
 //    jobName = jobName.getAt(0..(jobName.indexOf('/') - 1))
