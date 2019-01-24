@@ -82,7 +82,6 @@ node {
         }
 
       buildColor = "danger"
-      def failedTestsString = getFailedTests()
 
       notifySlack("", slackNotificationChannel, [
       [
