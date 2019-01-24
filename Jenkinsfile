@@ -20,9 +20,6 @@ def total = 0
 def failed = 0
 def skipped = 0
 
-def isPublishingBranch = {->
-return env.GIT_BRANCH == 'origin/master' || env.GIT_BRANCH =~ /release.+/
-}
 
 def isResultGoodForPublishing = {->
 return currentBuild.result == null
@@ -67,6 +64,9 @@ node {
 
   stage('Build') {
     sh "pwd"
+    sh "echo make install"
+    sh "echo male npm"
+    sh "ls -al"
     populateGlobalVariables()
     def buildColor = currentBuild.result == null ? "good": "warning"
     def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
