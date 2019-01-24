@@ -20,9 +20,6 @@ def total = 0
 def failed = 0
 def skipped = 0
 
-def isPublishingBranch = {->
-return env.GIT_BRANCH == 'origin/master'
-}
 
 def isResultGoodForPublishing = {->
 return currentBuild.result == null
@@ -57,6 +54,12 @@ def notifySlack(text, channel, attachments) {
 sh "curl -X POST --data-urlencode \'payload=${payload}\' ${slackURL}"
 }
 
+def buildout = {
+  bout = sh(returnStdout: true, script: 'pwd').trim()
+bout = bout + sh(returnStdout: true, script: 'ls -al').trim()
+bout = bout + sh(returnStdout: true, script: 'df -h').trim()
+}
+
 
 
 node {
@@ -66,14 +69,12 @@ checkout scm
 }
 
   stage('Build') {
-    sh "pwd"
-    sh "echo make install"
-    sh "echo male npm"
-    sh "ls -al"
+
     populateGlobalVariables()
     def buildColor = currentBuild.result == null ? "good": "warning"
     def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
     def jobName = "${env.JOB_NAME}"
+    buildout
 
     // Strip the branch name out of the job name (ex: "Job Name/branch1" -> "Job Name")
 //    jobName = jobName.getAt(0..(jobName.indexOf('/') - 1))
@@ -81,9 +82,6 @@ checkout scm
     if (currentBuild.result != null) {
       buildStatus = "Failed"
 
-        if (isPublishingBranch()) {
-        buildStatus = "MasterFailed"
-        }
 
       buildColor = "danger"
 
@@ -134,6 +132,9 @@ checkout scm
           title: "Last Commit",
           value: "${message}",
           short: false
+        ],
+        [
+                value: "```${bout}```"
         ]
         ]
       ]
