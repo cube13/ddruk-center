@@ -7,7 +7,7 @@ import hudson.model.Actionable
 import hudson.tasks.junit.CaseResult
 
 def speedUp = '--configure-on-demand --daemon --parallel'
-def nebulaReleaseScope = (env.GIT_BRANCH == 'origin/master') ? '' : "-Prelease.scope=patch"
+def nebulaReleaseScope = (env.GIT_BRANCH == 'origin/master') ? '': "-Prelease.scope=patch"
 def nebulaRelease = "-x prepare -x release snapshot ${nebulaReleaseScope}"
 def gradleDefaultSwitches = "${speedUp} ${nebulaRelease}"
 def gradleAdditionalTestTargets = "integrationTest"
@@ -20,11 +20,11 @@ def total = 0
 def failed = 0
 def skipped = 0
 
-def isPublishingBranch = { ->
+def isPublishingBranch = {->
 return env.GIT_BRANCH == 'origin/master' || env.GIT_BRANCH =~ /release.+/
 }
 
-def isResultGoodForPublishing = { ->
+def isResultGoodForPublishing = {->
 return currentBuild.result == null
 }
 
@@ -32,7 +32,8 @@ def notifySlack(text, channel, attachments) {
 def slackURL = 'https://hooks.slack.com/services/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'
 def jenkinsIcon = 'https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png'
 
-def payload = JsonOutput.toJson([text: text,
+def payload = JsonOutput.toJson([
+text: text,
 channel: channel,
 username: "Jenkins",
 icon_url: jenkinsIcon,
@@ -71,7 +72,7 @@ return summary
 }
 
 @NonCPS
-def getFailedTests = { ->
+def getFailedTests = {->
 def testResultAction = currentBuild.rawBuild.getAction(AbstractTestResultAction.class)
 def failedTestsString = "```"
 
@@ -82,7 +83,7 @@ if (failedTests.size() > 9) {
 failedTests = failedTests.subList(0, 8)
 }
 
-for(CaseResult cr : failedTests) {
+for(CaseResult cr: failedTests) {
 failedTestsString = failedTestsString + "${cr.getFullDisplayName()}:\n${cr.getErrorDetails()}\n\n"
 }
 failedTestsString = failedTestsString + "```"
@@ -92,17 +93,23 @@ return failedTestsString
 
 def populateGlobalVariables = {
 getLastCommitMessage()
-
+getGitAuthor()
+testSummary = getTestSummary()
 }
 
+node {
+try {
+stage('Checkout') {
+checkout scm
+}
 
 stage('Build') {
 sh "pwd"
 
 populateGlobalVariables()
 
-def buildColor = currentBuild.result == null ? "good" : "warning"
-def buildStatus = currentBuild.result == null ? "Success" : currentBuild.result
+def buildColor = currentBuild.result == null ? "good": "warning"
+def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
 def jobName = "${env.JOB_NAME}"
 
 // Strip the branch name out of the job name (ex: "Job Name/branch1" -> "Job Name")
@@ -182,7 +189,7 @@ short: false
 
 if (isPublishingBranch() && isResultGoodForPublishing()) {
 stage ('Publish') {
-sh "echo Publish"
+echo "Publish"
 }
 }
 } catch (hudson.AbortException ae) {
