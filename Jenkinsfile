@@ -93,14 +93,8 @@ return failedTestsString
 def populateGlobalVariables = {
 getLastCommitMessage()
 getGitAuthor()
-testSummary = getTestSummary()
 }
 
-node {
-try {
-stage('Checkout') {
-checkout scm
-}
 
 stage('Build') {
 sh "pwd"
@@ -188,7 +182,7 @@ short: false
 
 if (isPublishingBranch() && isResultGoodForPublishing()) {
 stage ('Publish') {
-sh "./gradlew ${gradleDefaultSwitches}"
+echo 'Deploy'
 }
 }
 } catch (hudson.AbortException ae) {
