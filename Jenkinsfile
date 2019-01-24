@@ -20,6 +20,9 @@ def total = 0
 def failed = 0
 def skipped = 0
 
+def isPublishingBranch = {->
+return env.GIT_BRANCH == 'origin/master'
+}
 
 def isResultGoodForPublishing = {->
 return currentBuild.result == null
@@ -147,7 +150,7 @@ node {
     }
   }
 
-  if (isPublishingBranch() && isResultGoodForPublishing()) {
+  if (isResultGoodForPublishing()) {
     stage ('Publish') {
     echo "Publish"
     }
