@@ -98,108 +98,106 @@ testSummary = getTestSummary()
 }
 
 node {
-try {
-stage('Checkout') {
-checkout scm
-}
+  try {
+    stage('Checkout') {
+    checkout scm
+    }
 
-stage('Build') {
-sh "pwd"
+  stage('Build') {
+    sh "pwd"
+    populateGlobalVariables()
+    def buildColor = currentBuild.result == null ? "good": "warning"
+    def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
+    def jobName = "${env.JOB_NAME}"
 
-populateGlobalVariables()
+    // Strip the branch name out of the job name (ex: "Job Name/branch1" -> "Job Name")
+    jobName = jobName.getAt(0..(jobName.indexOf('/') - 1))
 
-def buildColor = currentBuild.result == null ? "good": "warning"
-def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
-def jobName = "${env.JOB_NAME}"
+    if (true) {
+      buildStatus = "Failed"
 
-// Strip the branch name out of the job name (ex: "Job Name/branch1" -> "Job Name")
-jobName = jobName.getAt(0..(jobName.indexOf('/') - 1))
+        if (isPublishingBranch()) {
+        buildStatus = "MasterFailed"
+        }
 
-if (failed > 0) {
-buildStatus = "Failed"
+      buildColor = "danger"
+      def failedTestsString = getFailedTests()
 
-if (isPublishingBranch()) {
-buildStatus = "MasterFailed"
-}
+      notifySlack("", slackNotificationChannel, [
+      [
+        title: "${jobName}, build #${env.BUILD_NUMBER}",
+        title_link: "${env.BUILD_URL}",
+        color: "${buildColor}",
+        text: "${buildStatus}\n${author}",
+        "mrkdwn_in": ["fields"],
+        fields: [
+        [
+          title: "Branch",
+          value: "${env.GIT_BRANCH}",
+          short: true
+        ],
+        [
+          title: "Test Results",
+          value: "${testSummary}",
+          short: true
+        ],
+        [
+          title: "Last Commit",
+          value: "${message}",
+          short: false
+        ]
+        ]
+      ],
+      [
+        title: "Failed Tests",
+        color: "${buildColor}",
+        text: "${failedTestsString}",
+        "mrkdwn_in": ["text"],
+      ]
+      ])
+    } else {
+      notifySlack("", slackNotificationChannel, [
+      [
+        title: "${jobName}, build #${env.BUILD_NUMBER}",
+        title_link: "${env.BUILD_URL}",
+        color: "${buildColor}",
+        author_name: "${author}",
+        text: "${buildStatus}\n${author}",
+        fields: [
+        [
+          title: "Branch",
+          value: "${env.GIT_BRANCH}",
+          short: true
+        ],
+        [
+          title: "Test Results",
+          value: "${testSummary}",
+          short: true
+        ],
+        [
+          title: "Last Commit",
+          value: "${message}",
+          short: false
+        ]
+        ]
+      ]
+      ])
+    }
+  }
 
-buildColor = "danger"
-def failedTestsString = getFailedTests()
-
-notifySlack("", slackNotificationChannel, [
-[
-title: "${jobName}, build #${env.BUILD_NUMBER}",
-title_link: "${env.BUILD_URL}",
-color: "${buildColor}",
-text: "${buildStatus}\n${author}",
-"mrkdwn_in": ["fields"],
-fields: [
-[
-title: "Branch",
-value: "${env.GIT_BRANCH}",
-short: true
-],
-[
-title: "Test Results",
-value: "${testSummary}",
-short: true
-],
-[
-title: "Last Commit",
-value: "${message}",
-short: false
-]
-]
-],
-[
-title: "Failed Tests",
-color: "${buildColor}",
-text: "${failedTestsString}",
-"mrkdwn_in": ["text"],
-]
-])
-} else {
-notifySlack("", slackNotificationChannel, [
-[
-title: "${jobName}, build #${env.BUILD_NUMBER}",
-title_link: "${env.BUILD_URL}",
-color: "${buildColor}",
-author_name: "${author}",
-text: "${buildStatus}\n${author}",
-fields: [
-[
-title: "Branch",
-value: "${env.GIT_BRANCH}",
-short: true
-],
-[
-title: "Test Results",
-value: "${testSummary}",
-short: true
-],
-[
-title: "Last Commit",
-value: "${message}",
-short: false
-]
-]
-]
-])
-}
-}
-
-if (isPublishingBranch() && isResultGoodForPublishing()) {
-stage ('Publish') {
-echo "Publish"
-}
-}
+  if (isPublishingBranch() && isResultGoodForPublishing()) {
+    stage ('Publish') {
+    echo "Publish"
+    }
+  }
 } catch (hudson.AbortException ae) {
 // I ignore aborted builds, but you're welcome to notify Slack here
 } catch (e) {
-def buildStatus = "Failed"
+  def buildStatus = "Failed"
 
-if (isPublishingBranch()) {
-buildStatus = "MasterFailed"
-}
+  if (isPublishingBranch()) {
+  buildStatus = "MasterFailed"
+  }
 
 notifySlack("", slackNotificationChannel, [
 [
