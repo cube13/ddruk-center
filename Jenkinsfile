@@ -35,7 +35,7 @@ def jenkinsIcon = 'https://wiki.jenkins-ci.org/download/attachments/2916393/logo
 def payload = JsonOutput.toJson([
 text: text,
 channel: channel,
-username: "Jenkins",
+username: "${getGitAuthor} deploy to ${env.JOB_NAME}",
 icon_url: jenkinsIcon,
 attachments: attachments
 ])
