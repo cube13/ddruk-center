@@ -113,7 +113,7 @@ node {
       ])
     } else
     {
-      notifySlack("dddd", slackNotificationChannel, [
+      notifySlack("Build", slackNotificationChannel, [
       [
         title: "${jobName}, build #${env.BUILD_NUMBER}",
         title_link: "${env.BUILD_URL}",
@@ -145,7 +145,8 @@ node {
     }
 def buildColor = currentBuild.result == null ? "good": "warning"
 def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
-notifySlack("", slackNotificationChannel, [
+
+notifySlack("Publish", slackNotificationChannel, [
 [
 title: "${env.JOB_NAME}",
 title_link: "${env.BUILD_URL}",
@@ -160,13 +161,14 @@ text: "Publish ${env.JOB_NAME} ${buildStatus}",
         echo "Container restarted"
 def buildColor = currentBuild.result == null ? "good": "warning"
 def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
-notifySlack("", slackNotificationChannel, [
+
+notifySlack("Restart containers", slackNotificationChannel, [
 [
 title: "${env.JOB_NAME}",
 title_link: "${env.BUILD_URL}",
 color: "${buildColor}",
 author_name: "${author}",
-text: "Container restarted on ${env.JOB_NAME} ${buildStatus}",
+text: "Containers restarted on ${env.JOB_NAME} ${buildStatus}",
 ]
 ])
   }
