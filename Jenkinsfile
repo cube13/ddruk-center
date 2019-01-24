@@ -56,7 +56,6 @@ message = sh(returnStdout: true, script: 'git log -1 --pretty=%B').trim()
 def populateGlobalVariables = {
 getLastCommitMessage()
 getGitAuthor()
-testSummary = getTestSummary()
 }
 
 node {
@@ -117,7 +116,8 @@ node {
         "mrkdwn_in": ["text"],
       ]
       ])
-    } else {
+    } else
+    {
       notifySlack("", slackNotificationChannel, [
       [
         title: "${jobName}, build #${env.BUILD_NUMBER}",
