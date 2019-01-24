@@ -52,44 +52,6 @@ def getLastCommitMessage = {
 message = sh(returnStdout: true, script: 'git log -1 --pretty=%B').trim()
 }
 
-@NonCPS
-def getTestSummary = { ->
-def testResultAction = currentBuild.rawBuild.getAction(AbstractTestResultAction.class)
-def summary = ""
-
-if (testResultAction != null) {
-total = testResultAction.getTotalCount()
-failed = testResultAction.getFailCount()
-skipped = testResultAction.getSkipCount()
-
-summary = "Passed: " + (total - failed - skipped)
-summary = summary + (", Failed: " + failed)
-summary = summary + (", Skipped: " + skipped)
-} else {
-summary = "No tests found"
-}
-return summary
-}
-
-@NonCPS
-def getFailedTests = {->
-def testResultAction = currentBuild.rawBuild.getAction(AbstractTestResultAction.class)
-def failedTestsString = "```"
-
-if (testResultAction != null) {
-def failedTests = testResultAction.getFailedTests()
-
-if (failedTests.size() > 9) {
-failedTests = failedTests.subList(0, 8)
-}
-
-for(CaseResult cr: failedTests) {
-failedTestsString = failedTestsString + "${cr.getFullDisplayName()}:\n${cr.getErrorDetails()}\n\n"
-}
-failedTestsString = failedTestsString + "```"
-}
-return failedTestsString
-}
 
 def populateGlobalVariables = {
 getLastCommitMessage()
