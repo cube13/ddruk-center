@@ -74,7 +74,7 @@ node {
     // Strip the branch name out of the job name (ex: "Job Name/branch1" -> "Job Name")
     jobName = jobName.getAt(0..(jobName.indexOf('/') - 1))
 
-    if (true) {
+    if (false) {
       buildStatus = "Failed"
 
         if (isPublishingBranch()) {
