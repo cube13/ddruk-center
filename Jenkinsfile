@@ -92,7 +92,7 @@ return failedTestsString
 
 def populateGlobalVariables = {
 getLastCommitMessage()
-getGitAuthor()
+
 }
 
 
@@ -182,7 +182,7 @@ short: false
 
 if (isPublishingBranch() && isResultGoodForPublishing()) {
 stage ('Publish') {
-echo 'Deploy'
+sh "echo Publish"
 }
 }
 } catch (hudson.AbortException ae) {
