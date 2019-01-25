@@ -90,12 +90,16 @@ short: false
     def buildColor = currentBuild.result == null ? "good": "warning"
     def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
     def jobName = "${env.JOB_NAME}"
+
     notifySlack("Build", slackNotificationChannel, [
-    [
-      color: "${buildColor}",
-      text: "Build start"
-    ]
+      [
+        title: "${jobName}, build #${env.BUILD_NUMBER}",
+        title_link: "${env.BUILD_URL}",
+        color: "${buildColor}",
+        text: "*Last Commit*\n${message}\n${buildStatus}\n```${bout}```"
+      ]
     ])
+
     buildOut()
 
     // Strip the branch name out of the job name (ex: "Job Name/branch1" -> "Job Name")
@@ -143,7 +147,6 @@ short: false
         color: "${buildColor}",
         text: "*Last Commit*\n${message}\n${buildStatus}\n```${bout}```"
         ]
-      ]
       ])
     }
   }
