@@ -194,7 +194,7 @@ def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
 notifySlack("Restart containers", slackNotificationChannel, [
 [
 color: "${buildColor}",
-text: "```${restartout}```\n${buildStatus}",
+text: "```${restartout}```\n${buildStatus}\n",
 ]
 ])
 
