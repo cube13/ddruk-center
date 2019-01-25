@@ -68,6 +68,7 @@ node {
 stage('Checkout') {
 checkout scm
 populateGlobalVariables()
+
 notifySlack("Start", slackNotificationChannel, [
 [
 //title: "${env.JOB_NAME}",
@@ -134,7 +135,7 @@ short: false
         title: "${jobName}, build #${env.BUILD_NUMBER}",
         title_link: "${env.BUILD_URL}",
         color: "${buildColor}",
-        text: "${buildStatus}\n${author}",
+        text: "${buildStatus}\n${author}\n${bout}",
         "mrkdwn_in": ["fields"],
         fields: [
         [
