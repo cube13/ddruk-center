@@ -157,18 +157,18 @@ short: false
 
   if (isResultGoodForPublishing()) {
     stage ('Publish') {
-      echo "Publish"
-      publish(ddruk)
-
-notifySlack("Publish", slackNotificationChannel, [
-[
-color: "${buildColor}",
-text: "```${publishout}```\n${buildStatus}",
-]
-])
-    }
+echo "Publish"
+publish(ddruk)
 def buildColor = currentBuild.result == null ? "good": "warning"
 def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
+notifySlack("Publish", slackNotificationChannel, [
+[
+color: "${buildColor}",
+text: "```${publishout}```\n${buildStatus}",
+]
+])
+
+
 
 notifySlack("Publish", slackNotificationChannel, [
 [
@@ -176,6 +176,7 @@ color: "${buildColor}",
 text: "```${publishout}```\n${buildStatus}",
 ]
 ])
+}
   }
 
   stage ('Restart containers'){
