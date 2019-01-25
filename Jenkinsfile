@@ -15,7 +15,9 @@ def gradleAdditionalSwitches = "shadowJar"
 def slackNotificationChannel = "general"
 def author = ""
 def message = ""
-def testSummary = ""
+//def testSummary = ""
+def publishout = ""
+def restartout = ""
 def total = 0
 def failed = 0
 def skipped = 0
@@ -160,7 +162,7 @@ def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
 notifySlack("Publish", slackNotificationChannel, [
 [
 color: "${buildColor}",
-text: "```publish out```\n${buildStatus}",
+text: "```${pubplishout}```\n${buildStatus}",
 ]
 ])
   }
@@ -173,7 +175,7 @@ def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
 notifySlack("Restart containers", slackNotificationChannel, [
 [
 color: "${buildColor}",
-text: "```restart out```\n${buildStatus}",
+text: "```${restartout}```\n${buildStatus}",
 ]
 ])
 
