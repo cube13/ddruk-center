@@ -158,14 +158,20 @@ short: false
   if (isResultGoodForPublishing()) {
     stage ('Publish') {
 echo "Publish"
+parallel (
+  "app-01 publish": {
 publish()
+},
+        "app-02 publish" : {
 buildOut()
+}
+        )
 def buildColor = currentBuild.result == null ? "good": "warning"
 def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
 notifySlack("Publish", slackNotificationChannel, [
 [
 color: "${buildColor}",
-text: "```${publishout}```\n${buildStatus}",
+text: "```${publishout}```\n```${bout}```\n${buildStatus}",
 ]
 ])
 
