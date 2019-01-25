@@ -135,7 +135,7 @@ short: false
         title: "${jobName}, build #${env.BUILD_NUMBER}",
         title_link: "${env.BUILD_URL}",
         color: "${buildColor}",
-        text: "${buildStatus}\n${author}\n${bout}",
+        text: "${buildStatus}\n${author}\n```${bout}```",
         "mrkdwn_in": ["fields"],
         fields: [
         [
@@ -147,9 +147,6 @@ short: false
           title: "Last Commit",
           value: "${message}",
           short: false
-        ],
-        [
-                value: "```${bout}```"
         ]
         ]
       ]
