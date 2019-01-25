@@ -41,8 +41,8 @@ def buildOut = {
   bout = sh(returnStdout: true, script: 'ls -al').trim()
   bout = bout +  sh(returnStdout: true, script: 'df -h').trim()
 }
-def publish(node) {
-publishout = sh(returnStdout: true, script: "rsync -rvae \"ssh -p2212 -i /home/deployer/.ssh/id_rsa\" --exclude .git --exclude .idea --delete ${WORKSPACE}/ deployer@${node}:/home/deployer/${env.JOB_NAME}/").trim()
+def publish = {
+publishout = sh(returnStdout: true, script: "rsync -rvae \"ssh -p2212 -i /home/deployer/.ssh/id_rsa\" --exclude .git --exclude .idea --delete ${WORKSPACE}/ deployer@${ddruk}:/home/deployer/${env.JOB_NAME}/").trim()
 }
 
 def populateGlobalVariables = {
@@ -158,7 +158,7 @@ short: false
   if (isResultGoodForPublishing()) {
     stage ('Publish') {
 echo "Publish"
-publish(ddruk)
+publish()
 def buildColor = currentBuild.result == null ? "good": "warning"
 def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
 notifySlack("Publish", slackNotificationChannel, [
@@ -168,14 +168,6 @@ text: "```${publishout}```\n${buildStatus}",
 ]
 ])
 
-
-
-notifySlack("Publish", slackNotificationChannel, [
-[
-color: "${buildColor}",
-text: "```${publishout}```\n${buildStatus}",
-]
-])
 }
   }
 
