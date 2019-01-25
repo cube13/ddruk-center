@@ -161,20 +161,26 @@ echo "Publish"
 parallel (
   "app-01 publish": {
 publish()
+notifySlack("Publish", slackNotificationChannel, [
+[
+color: "${buildColor}",
+text: "${buildStatus}\n```${publishout}```",
+]
+])
 },
         "app-02 publish" : {
 buildOut()
+notifySlack("Publish", slackNotificationChannel, [
+[
+color: "${buildColor}",
+text: "${buildStatus}\n```${bout}```",
+]
+])
 }
         )
 def buildColor = currentBuild.result == null ? "good": "warning"
 def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
-notifySlack("Publish", slackNotificationChannel, [
-[
-color: "${buildColor}",
-text: "```${buildStatus}```\n```${publishout}```",
-text: "```${buildStatus}```\n```${bout}```",
-]
-])
+
 
 }
   }
