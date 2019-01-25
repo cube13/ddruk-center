@@ -22,6 +22,7 @@ def total = 0
 def failed = 0
 def skipped = 0
 def bout = 0
+def ddruk= "138.68.59.63"
 
 def isResultGoodForPublishing = {->
 return currentBuild.result == null
@@ -39,6 +40,9 @@ message = sh(returnStdout: true, script: 'git log -1 --pretty=%B').trim()
 def buildOut = {
   bout = sh(returnStdout: true, script: 'ls -al').trim()
   bout = bout +  sh(returnStdout: true, script: 'df -h').trim()
+}
+def publish(node) = {
+publishout = sh(returnStdout: true, script: "rsync -rvae \"ssh -p2212 -i /home/deployer/.ssh/id_rsa\" --exclude .git --exclude .idea --delete ${WORKSPACE}/ deployer@node:/home/deployer/${env.JOB_NAME}/").trim()
 }
 
 def populateGlobalVariables = {
@@ -154,7 +158,8 @@ short: false
   if (isResultGoodForPublishing()) {
     stage ('Publish') {
       echo "Publish"
-      sh "rsync -rvae \"ssh -p2212 -i /home/deployer/.ssh/id_rsa\" --exclude .git --exclude .idea --delete ${WORKSPACE}/ deployer@138.68.59.63:/home/deployer/${env.JOB_NAME}/"
+        publish(ddruk)
+
     }
 def buildColor = currentBuild.result == null ? "good": "warning"
 def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
