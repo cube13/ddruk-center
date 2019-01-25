@@ -91,12 +91,12 @@ short: false
     def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
     def jobName = "${env.JOB_NAME}"
 
-    notifySlack("Build", slackNotificationChannel, [
+    notifySlack("Build started", slackNotificationChannel, [
       [
         title: "${jobName}, build #${env.BUILD_NUMBER}",
         title_link: "${env.BUILD_URL}",
         color: "${buildColor}",
-        text: "*Last Commit*\n${message}\n${buildStatus}\n```${bout}```"
+        text: "*Last Commit*\n${message}"
       ]
     ])
 
@@ -142,10 +142,8 @@ short: false
     {
       notifySlack("Build", slackNotificationChannel, [
       [
-        title: "${jobName}, build #${env.BUILD_NUMBER}",
-        title_link: "${env.BUILD_URL}",
         color: "${buildColor}",
-        text: "*Last Commit*\n${message}\n${buildStatus}\n```${bout}```"
+        text: "```${bout}```\n${buildStatus}"
         ]
       ])
     }
@@ -161,10 +159,8 @@ def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
 
 notifySlack("Publish", slackNotificationChannel, [
 [
-title: "${env.JOB_NAME}",
-title_link: "${env.BUILD_URL}",
 color: "${buildColor}",
-text: "Publish ${env.JOB_NAME} ${buildStatus}",
+text: "```publish out```\n${buildStatus}",
 ]
 ])
   }
@@ -176,13 +172,11 @@ def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
 
 notifySlack("Restart containers", slackNotificationChannel, [
 [
-title: "${env.JOB_NAME}",
-title_link: "${env.BUILD_URL}",
 color: "${buildColor}",
-author_name: "${author}",
-text: "Containers restarted on ${env.JOB_NAME} ${buildStatus}",
+text: "```restart out```\n${buildStatus}",
 ]
 ])
+
   }
 } catch (hudson.AbortException ae) {
 // I ignore aborted builds, but you're welcome to notify Slack here
