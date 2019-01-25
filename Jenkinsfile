@@ -158,8 +158,14 @@ short: false
   if (isResultGoodForPublishing()) {
     stage ('Publish') {
       echo "Publish"
-        publish(ddruk)
+      publish(ddruk)
 
+notifySlack("Publish", slackNotificationChannel, [
+[
+color: "${buildColor}",
+text: "```${publishout}```\n${buildStatus}",
+]
+])
     }
 def buildColor = currentBuild.result == null ? "good": "warning"
 def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
