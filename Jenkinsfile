@@ -171,7 +171,8 @@ def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
 notifySlack("Publish", slackNotificationChannel, [
 [
 color: "${buildColor}",
-text: "```${publishout}```\n```${bout}```\n${buildStatus}",
+text: "```${buildStatus}```\n```${publishout}```",
+text: "```${buildStatus}```\n```${bout}```",
 ]
 ])
 
