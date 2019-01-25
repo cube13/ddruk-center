@@ -42,7 +42,7 @@ def buildOut = {
   bout = bout +  sh(returnStdout: true, script: 'df -h').trim()
 }
 def publish(node) {
-publishout = sh(returnStdout: true, script: "rsync -rvae \"ssh -p2212 -i /home/deployer/.ssh/id_rsa\" --exclude .git --exclude .idea --delete ${WORKSPACE}/ deployer@node:/home/deployer/${env.JOB_NAME}/").trim()
+publishout = sh(returnStdout: true, script: "rsync -rvae \"ssh -p2212 -i /home/deployer/.ssh/id_rsa\" --exclude .git --exclude .idea --delete ${WORKSPACE}/ deployer@${node}:/home/deployer/${env.JOB_NAME}/").trim()
 }
 
 def populateGlobalVariables = {
