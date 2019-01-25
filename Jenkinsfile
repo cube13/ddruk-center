@@ -163,7 +163,7 @@ parallel (
 publish()
 },
         "app-02 publish" : {
-        publish()
+buildOut()
 }
         )
 def buildColor = currentBuild.result == null ? "good": "warning"
