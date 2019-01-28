@@ -18,11 +18,9 @@ def message = ""
 //def testSummary = ""
 def publishout = ""
 def restartout = ""
-def total = 0
-def failed = 0
-def skipped = 0
-def bout = 0
-def ddruk= "138.68.59.63"
+def buildout = ""
+def app01 = "138.68.59.63"
+//def app02 = ""
 
 def isResultGoodForPublishing = {->
 return currentBuild.result == null
@@ -37,9 +35,9 @@ def getLastCommitMessage = {
 message = sh(returnStdout: true, script: 'git log -1 --pretty=%B').trim()
 }
 
-def buildOut = {
-  bout = sh(returnStdout: true, script: 'ls -al').trim()
-  bout = bout +  sh(returnStdout: true, script: 'df -h').trim()
+def buildOut(node) {
+  buildout = sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa ${node} \"ls -al\"").trim()
+  buildout = buildout +  sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa ${node} \"ls -al\"").trim()
 }
 def publish = {
 publishout = sh(returnStdout: true, script: "rsync -rvae \"ssh -p2212 -i /home/deployer/.ssh/id_rsa\" --exclude .git --exclude .idea --delete ${WORKSPACE}/ deployer@${ddruk}:/home/deployer/${env.JOB_NAME}/").trim()
@@ -65,30 +63,26 @@ def notifySlack(text, channel, attachments) {
 sh "curl -X POST --data-urlencode \'payload=${payload}\' ${slackURL}"
 }
 
-
-
-
-
 node {
   try {
-stage('Checkout') {
-checkout scm
-populateGlobalVariables()
+    stage('Checkout') {
+      checkout scm
+      populateGlobalVariables()
 
-notifySlack("Start", slackNotificationChannel, [
-[
-//title: "${env.JOB_NAME}",
-//title_link: "${env.BUILD_URL}"
-author_name: "${author}",
-fields:
-[
-title: "Last Commit",
-value: "${message}",
-short: false
-]
-]
-])
-}
+      notifySlack("Start", slackNotificationChannel, [
+        [
+          //title: "${env.JOB_NAME}",
+          //title_link: "${env.BUILD_URL}"
+          author_name: "${author}",
+          fields:
+            [
+              title: "Last Commit",
+              value: "${message}",
+              short: false
+            ]
+          ]
+      ])
+    }
 
   stage('Build') {
 
@@ -157,70 +151,68 @@ short: false
 
   if (isResultGoodForPublishing()) {
     stage ('Publish') {
-echo "Publish"
-parallel (
-  "app-01 publish": {
-publish()
-},
+      echo "Publish"
+      parallel (
+        "app-01 publish": {
+          publish()
+        },
         "app-02 publish" : {
-buildOut()
-}
-        )
-def buildColor = currentBuild.result == null ? "good": "warning"
-def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
+          buildOut()
+        }
+      )
+      def buildColor = currentBuild.result == null ? "good": "warning"
+      def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
 
-notifySlack("Publish", slackNotificationChannel, [
-[
-color: "${buildColor}",
-text: "${buildStatus}\n```${bout}```",
-]
-])
+      notifySlack("Publish", slackNotificationChannel, [
+      [
+        color: "${buildColor}",
+        text: "${buildStatus}\n```${bout}```",
+      ]
+      ])
 
-notifySlack("Publish", slackNotificationChannel, [
-[
-color: "${buildColor}",
-text: "${buildStatus}\n```${publishout}```",
-]
-])
+      notifySlack("Publish", slackNotificationChannel, [
+      [
+        color: "${buildColor}",
+        text: "${buildStatus}\n```${publishout}```",
+      ]
+      ])
 
-}
+    }
   }
 
   stage ('Restart containers'){
-        echo "Container restarted"
-def buildColor = currentBuild.result == null ? "good": "warning"
-def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
+    echo "Container restarted"
+    def buildColor = currentBuild.result == null ? "good": "warning"
+    def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
 
-notifySlack("Restart containers", slackNotificationChannel, [
-[
-color: "${buildColor}",
-text: "```${restartout}```\n${buildStatus}\n",
-]
-])
-
+    notifySlack("Restart containers", slackNotificationChannel, [
+    [
+      color: "${buildColor}",
+      text: "```${restartout}```\n${buildStatus}\n",
+    ]
+    ])
   }
 } catch (hudson.AbortException ae) {
 // I ignore aborted builds, but you're welcome to notify Slack here
 } catch (e) {
   def buildStatus = "Failed"
 
-
-notifySlack("", slackNotificationChannel, [
-[
-title: "${env.JOB_NAME}, build #${env.BUILD_NUMBER}",
-title_link: "${env.BUILD_URL}",
-color: "danger",
-author_name: "${author}",
-text: "${buildStatus}",
-fields: [
-[
-title: "Error",
-value: "${e}",
-short: false
-]
-]
-]
-])
+  notifySlack("", slackNotificationChannel, [
+  [
+    title: "${env.JOB_NAME}, build #${env.BUILD_NUMBER}",
+    title_link: "${env.BUILD_URL}",
+    color: "danger",
+    author_name: "${author}",
+    text: "${buildStatus}",
+    fields: [
+      [
+        title: "Error",
+        value: "${e}",
+        short: false
+      ]
+    ]
+  ]
+  ])
 
 throw e
 }
