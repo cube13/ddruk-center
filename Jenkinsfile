@@ -36,8 +36,8 @@ message = sh(returnStdout: true, script: 'git log -1 --pretty=%B').trim()
 }
 
 def buildOut(node) {
-  buildout = sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa ${node} \"ls -al\"").trim()
-  buildout = buildout +  sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa ${node} \"ls -al\"").trim()
+  buildout = sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa deployer@${node} \"ls -al\"").trim()
+  buildout = buildout +  sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa deployer@${node} \"ls -al\"").trim()
 }
 def publish = {
 publishout = sh(returnStdout: true, script: "rsync -rvae \"ssh -p2212 -i /home/deployer/.ssh/id_rsa\" --exclude .git --exclude .idea --delete ${WORKSPACE}/ deployer@${ddruk}:/home/deployer/${env.JOB_NAME}/").trim()
@@ -101,9 +101,9 @@ node {
     ])
 
     if(buildOut(app01)){
-        echo 1
+        echo "odyn"
     } else {
-        echo 0
+        echo "dva"
     }
 
 
