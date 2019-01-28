@@ -23,15 +23,9 @@ def app01 = "138.68.59.63"
 def app02 = "157.230.31.117"
 //def app02 = ""
 
-String[] arr = [ "one","two","three",'four','five' ]
+String[] nodes = [ "157.230.31.117","157.230.100.111" ]
 
-def stepsForParallel = [:]
-arr.each {
-def stepName = "running ${it}"
-stepsForParallel[stepName] = { ->
-echo "${it}"
-}
-}
+
 
 def isResultGoodForPublishing = {->
 return currentBuild.result == null
@@ -47,13 +41,21 @@ message = sh(returnStdout: true, script: 'git log -1 --pretty=%B').trim()
 }
 
 def build(node) {
-  out = sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa deployer@${node} \"ls -al\"").trim()
-  out = out + "\n" +  sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa deployer@${node} \"df -h\"").trim()
-  return out
+out = sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa deployer@${node} \"ls -al\"").trim()
+out = out + " \n" +  sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa deployer@${node} \"df -h\"").trim()
+return out
 }
 def publish(node) {
-  out = sh(returnStdout: true, script: "rsync -rvae \"ssh -p2212 -i /home/deployer/.ssh/id_rsa\" --exclude .git --exclude .idea --delete ${WORKSPACE}/ deployer@${node}:/home/deployer/${env.JOB_NAME}/").trim()
-  return out
+out = sh(returnStdout: true, script: "rsync -rvae \"ssh -p2212 -i /home/deployer/.ssh/id_rsa\" --exclude .git --exclude .idea --delete ${WORKSPACE}/ deployer@${node}:/home/deployer/${env.JOB_NAME}/").trim()
+return out
+}
+
+def publishParallel = [:]
+nodes.each {
+def stepName = "running ${it}"
+publishParallel[stepName] = { ->
+publishOut = publishOut + " \n" +publish("${it}")
+}
 }
 
 def populateGlobalVariables = {
@@ -62,156 +64,141 @@ getGitAuthor()
 }
 
 def notifySlack(text, channel, attachments) {
-  def slackURL = 'https://hooks.slack.com/services/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'
-  def jenkinsIcon = 'https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png'
+def slackURL = 'https://hooks.slack.com/services/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'
+def jenkinsIcon = 'https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png'
 
-  def payload = JsonOutput.toJson([
-    text: text,
-    channel: channel,
-    username: "Deploy to ${env.JOB_NAME}",
-    icon_url: jenkinsIcon,
-  attachments: attachments
+def payload = JsonOutput.toJson([
+text: text,
+channel: channel,
+username: "Deploy to ${env.JOB_NAME}",
+icon_url: jenkinsIcon,
+attachments: attachments
 ])
 
 sh "curl -X POST --data-urlencode \'payload=${payload}\' ${slackURL}"
 }
 
 node {
-  try {
-    stage('Checkout') {
-      checkout scm
-      populateGlobalVariables()
+try {
+stage('Checkout') {
+checkout scm
+populateGlobalVariables()
 
-      notifySlack("Start", slackNotificationChannel, [
-        [
-          //title: "${env.JOB_NAME}",
-          //title_link: "${env.BUILD_URL}"
-          author_name: "${author}",
-          fields:
-            [
-              title: "Last Commit",
-              value: "${message}",
-              short: false
-            ]
-          ]
-      ])
-    }
+notifySlack("Start", slackNotificationChannel, [
+[
+//title: "${env.JOB_NAME}",
+//title_link: "${env.BUILD_URL}"
+author_name: "${author}",
+fields:
+[
+title: "Last Commit",
+value: "${message}",
+short: false
+]
+]
+])
+}
 
-  stage('Build') {
+stage('Build') {
 
-    populateGlobalVariables()
-    def buildColor = currentBuild.result == null ? "good": "warning"
-    def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
-    def jobName = "${env.JOB_NAME}"
+populateGlobalVariables()
+def buildColor = currentBuild.result == null ? "good": "warning"
+def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
+def jobName = "${env.JOB_NAME}"
 
-    notifySlack("Build started", slackNotificationChannel, [
-      [
-        title: "${jobName}, build #${env.BUILD_NUMBER}",
-        title_link: "${env.BUILD_URL}",
-        color: "${buildColor}",
-        text: "*Last Commit*\n${message}"
-      ]
-    ])
+notifySlack("Build started", slackNotificationChannel, [
+[
+title: "${jobName}, build #${env.BUILD_NUMBER}",
+title_link: "${env.BUILD_URL}",
+color: "${buildColor}",
+text: "*Last Commit*\n${message}"
+]
+])
 
-        buildOut=build(app02)
+buildOut=build(app02)
 
 
-    // Strip the branch name out of the job name (ex: "Job Name/branch1" -> "Job Name")
+// Strip the branch name out of the job name (ex: "Job Name/branch1" -> "Job Name")
 //    jobName = jobName.getAt(0..(jobName.indexOf('/') - 1))
 
-    if (currentBuild.result != null) {
-      buildStatus = "Failed"
+if (currentBuild.result != null) {
+buildStatus = "Failed"
 
 
-      buildColor = "danger"
+buildColor = "danger"
 
-      notifySlack("", slackNotificationChannel, [
-      [
-        title: "${jobName}, build #${env.BUILD_NUMBER}",
-        title_link: "${env.BUILD_URL}",
-        color: "${buildColor}",
-        text: "${buildStatus}\n",
-        "mrkdwn_in": ["fields"],
+notifySlack("", slackNotificationChannel, [
+[
+title: "${jobName}, build #${env.BUILD_NUMBER}",
+title_link: "${env.BUILD_URL}",
+color: "${buildColor}",
+text: "${buildStatus}\n",
+"mrkdwn_in": ["fields"],
 
-      ]
-      ])
-    } else
-    {
-      notifySlack("Build", slackNotificationChannel, [
-      [
-        color: "${buildColor}",
-        text: "```${buildOut}```\n${buildStatus}"
-        ]
-      ])
-    }
-  }
+]
+])
+} else
+{
+notifySlack("Build", slackNotificationChannel, [
+[
+color: "${buildColor}",
+text: "```${buildOut}```\n${buildStatus}"
+]
+])
+}
+}
 
-  if (isResultGoodForPublishing()) {
-    stage ('Publish') {
-      echo "Publish"
-      parallel (
-        "app-01 publish": {
-          publishOut = "1\n" + publish(app01)
-        },
-        "app-01 build" : {
-          publishOut = "2\n" + publishOut + "\n" + build(app01)
-        },
-        "app-02 publish": {
-          publishOut = "3\n" + publishOut + "\n" + publish(app02)
-        },
-        "app-02 build" : {
-          publishOut = "4\n" + publishOut + "\n" + build(app02)
-        }
-      )
+if (isResultGoodForPublishing()) {
+  stage ('Publish') {
+    echo "Publish"
+    parallel publishParallel
 
-        parallel stepsForParallel
-
-      def buildColor = currentBuild.result == null ? "good": "warning"
-      def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
-
-
-      notifySlack("Publish", slackNotificationChannel, [
-      [
-        color: "${buildColor}",
-        text: "${buildStatus}\n```${publishOut}```",
-      ]
-      ])
-
-    }
-  }
-
-  stage ('Restart containers'){
-    echo "Container restarted"
     def buildColor = currentBuild.result == null ? "good": "warning"
     def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
 
-    notifySlack("Restart containers", slackNotificationChannel, [
+
+    notifySlack("Publish", slackNotificationChannel, [
     [
       color: "${buildColor}",
-      text: "```${restartOut}```\n${buildStatus}\n",
+      text: "${buildStatus}\n```${publishOut}```",
     ]
     ])
+
   }
+}
+
+stage ('Restart containers'){
+echo "Container restarted"
+def buildColor = currentBuild.result == null ? "good": "warning"
+def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
+
+notifySlack("Restart containers", slackNotificationChannel, [
+[
+color: "${buildColor}",
+text: "```${restartOut}```\n${buildStatus}\n",
+]
+])
+}
 } catch (hudson.AbortException ae) {
 // I ignore aborted builds, but you're welcome to notify Slack here
 } catch (e) {
-  def buildStatus = "Failed"
+def buildStatus = "Failed"
 
-  notifySlack("", slackNotificationChannel, [
-  [
-    title: "${env.JOB_NAME}, build #${env.BUILD_NUMBER}",
-    title_link: "${env.BUILD_URL}",
-    color: "danger",
-    text: "${buildStatus}",
-    fields: [
-      [
-        title: "Error",
-        value: "${e}",
-        short: false
-      ]
-    ]
-  ]
-  ])
+notifySlack("", slackNotificationChannel, [
+[
+title: "${env.JOB_NAME}, build #${env.BUILD_NUMBER}",
+title_link: "${env.BUILD_URL}",
+color: "danger",
+text: "${buildStatus}",
+fields: [
+[
+title: "Error",
+value: "${e}",
+short: false
+]
+]
+]
+])
 
 throw e
 }
