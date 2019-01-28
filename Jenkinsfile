@@ -154,14 +154,14 @@ node {
           publishOut = publish(app01)
         },
         "app-01 build" : {
-          bouildOut=build(app01)
+          publishOut = publishOut + "\n" + build(app01)
         },
-"app-02 publish": {
-publishOut = publishOut + "\n" + publish(app02)
-},
-"app-02 build" : {
-bouildOut = buildOut + "\n" +build(app02)
-}
+        "app-02 publish": {
+          publishOut = publishOut + "\n" + publish(app02)
+        },
+        "app-02 build" : {
+          publishOut = publishOut + "\n" + build(app02)
+        }
       )
 
         parallel stepsForParallel
@@ -169,12 +169,6 @@ bouildOut = buildOut + "\n" +build(app02)
       def buildColor = currentBuild.result == null ? "good": "warning"
       def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
 
-      notifySlack("Publish", slackNotificationChannel, [
-      [
-        color: "${buildColor}",
-        text: "${buildStatus}\n```${buildOut}```",
-      ]
-      ])
 
       notifySlack("Publish", slackNotificationChannel, [
       [
@@ -194,7 +188,7 @@ bouildOut = buildOut + "\n" +build(app02)
     notifySlack("Restart containers", slackNotificationChannel, [
     [
       color: "${buildColor}",
-      text: "```${restartout}```\n${buildStatus}\n",
+      text: "```${restartOut}```\n${buildStatus}\n",
     ]
     ])
   }
