@@ -16,12 +16,22 @@ def slackNotificationChannel = "general"
 def author = ""
 def message = ""
 //def testSummary = ""
-def publishout = ""
-def restartout = ""
-def buildout = ""
+def publishOut = ""
+def restartOut = ""
+def buildOut = ""
 def app01 = "138.68.59.63"
+def app02 = "157.230.31.117"
 //def app02 = ""
- def out=""
+
+String[] arr = [ "one","two","three",'four','five' ]
+
+def stepsForParallel = [:]
+arr.each {
+def stepName = "running ${it}"
+stepsForParallel[stepName] = { ->
+echo "${it}"
+}
+}
 
 def isResultGoodForPublishing = {->
 return currentBuild.result == null
@@ -36,14 +46,14 @@ def getLastCommitMessage = {
 message = sh(returnStdout: true, script: 'git log -1 --pretty=%B').trim()
 }
 
-def buildOut(node) {
-  buildout = sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa deployer@${node} \"ls -al\"").trim()
-  buildout = buildout +  sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa deployer@${node} \"df -al\"").trim()
-        return buildout
+def build(node) {
+  out = sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa deployer@${node} \"ls -al\"").trim()
+  out = out +  sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa deployer@${node} \"df -al\"").trim()
+  return out
 }
 def publish(node) {
-publishout = sh(returnStdout: true, script: "rsync -rvae \"ssh -p2212 -i /home/deployer/.ssh/id_rsa\" --exclude .git --exclude .idea --delete ${WORKSPACE}/ deployer@${node}:/home/deployer/${env.JOB_NAME}/").trim()
-        return publishout
+  out = sh(returnStdout: true, script: "rsync -rvae \"ssh -p2212 -i /home/deployer/.ssh/id_rsa\" --exclude .git --exclude .idea --delete ${WORKSPACE}/ deployer@${node}:/home/deployer/${env.JOB_NAME}/").trim()
+  return out
 }
 
 def populateGlobalVariables = {
@@ -140,12 +150,21 @@ node {
       echo "Publish"
       parallel (
         "app-01 publish": {
-          out=publish(app01)
+          publishOut=publish(app01)
         },
-        "app-02 publish" : {
-          buildOut(app01)
+        "app-01 publish" : {
+          bouildOut=build(app01)
         }
+"app-02 publish": {
+publishOut=publish(app02)
+},
+"app-02 publish" : {
+bouildOut=build(app02)
+}
       )
+
+        parallel stepsForParallel
+
       def buildColor = currentBuild.result == null ? "good": "warning"
       def buildStatus = currentBuild.result == null ? "Success": currentBuild.result
 
