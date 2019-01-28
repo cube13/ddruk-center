@@ -40,7 +40,7 @@ message = sh(returnStdout: true, script: 'git log -1 --pretty=%B').trim()
 def build() {
 //out = sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa deployer@${node} \"ls -al\"").trim()
 //out = out + " \n" +  sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa deployer@${node} \"df -h\"").trim()
-out = sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa deployer@157.230.100.114 \"ls -al\"").trim()
+out = sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa deployer@157.230.100.114 \"du /home/* -hs\"").trim()
 
 return out
 }
