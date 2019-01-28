@@ -21,6 +21,7 @@ def restartout = ""
 def buildout = ""
 def app01 = "138.68.59.63"
 //def app02 = ""
+ def out=""
 
 def isResultGoodForPublishing = {->
 return currentBuild.result == null
@@ -137,7 +138,7 @@ node {
       echo "Publish"
       parallel (
         "app-01 publish": {
-          publish(app01)
+          out=publish(app01)
         },
         "app-02 publish" : {
           buildOut(app01)
@@ -156,7 +157,7 @@ node {
       notifySlack("Publish", slackNotificationChannel, [
       [
         color: "${buildColor}",
-        text: "${buildStatus}\n```${publishout}```",
+        text: "${buildStatus}\n```${out}```",
       ]
       ])
 
