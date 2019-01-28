@@ -178,6 +178,7 @@ text: "```${restartOut}```\n${buildStatus}\n",
 ]
 ])
 }
+
 } catch (hudson.AbortException ae) {
 // I ignore aborted builds, but you're welcome to notify Slack here
 } catch (e) {
@@ -201,4 +202,31 @@ short: false
 
 throw e
 }
+
+post {
+success {
+notifySlack("Success", slackNotificationChannel, [
+[
+title: "${env.JOB_NAME}, build #${env.BUILD_NUMBER}",
+title_link: "${env.BUILD_URL}",
+color: "good",
+]
+])
+
 }
+
+failure {
+notifySlack("Failure", slackNotificationChannel, [
+[
+title: "${env.JOB_NAME}, build #${env.BUILD_NUMBER}",
+title_link: "${env.BUILD_URL}",
+color: "danger",
+]
+])
+
+
+}
+}
+
+}
+
