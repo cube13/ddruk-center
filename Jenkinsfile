@@ -37,9 +37,11 @@ def getLastCommitMessage = {
 message = sh(returnStdout: true, script: 'git log -1 --pretty=%B').trim()
 }
 
-def build(node) {
-out = sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa deployer@${node} \"ls -al\"").trim()
-out = out + " \n" +  sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa deployer@${node} \"df -h\"").trim()
+def build() {
+//out = sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa deployer@${node} \"ls -al\"").trim()
+//out = out + " \n" +  sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa deployer@${node} \"df -h\"").trim()
+out = sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa deployer@$157.230.100.114 \"ls -al\"").trim()
+
 return out
 }
 def publish(node) {

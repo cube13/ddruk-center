@@ -32,13 +32,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Jenkinsfile" value="2158" />
+          <entry key="Jenkinsfile" value="2160" />
           <entry key="gitignore" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="2158" />
+          <entry key="JSON" value="2160" />
           <entry key="PLAIN_TEXT" value="12" />
         </counts>
       </usages-collector>
@@ -49,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1689">
-              <caret line="155" column="2" lean-forward="true" selection-start-line="155" selection-start-column="2" selection-end-line="155" selection-end-column="2" />
+            <state relative-caret-position="-345">
+              <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -93,7 +93,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1987" />
+    <option name="x" value="2088" />
+    <option name="y" value="2" />
     <option name="width" value="1618" />
     <option name="height" value="962" />
   </component>
@@ -150,12 +151,12 @@
       <option name="presentableId" value="Default" />
       <updated>1547548324550</updated>
       <workItem from="1547548325695" duration="1640000" />
-      <workItem from="1548332540832" duration="31718000" />
+      <workItem from="1548332540832" duration="31965000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33358000" />
+    <option name="totallyTimeSpent" value="33605000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1987" y="0" width="1618" height="962" extended-state="0" />
@@ -204,8 +205,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Jenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1689">
-          <caret line="155" column="2" lean-forward="true" selection-start-line="155" selection-start-column="2" selection-end-line="155" selection-end-column="2" />
+        <state relative-caret-position="-345">
+          <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
         </state>
       </provider>
     </entry>
