@@ -114,7 +114,12 @@ text: "*Last Commit*\n${message}"
 ]
 ])
 
-buildOut=build()
+if(buildOut=build()) {
+        echo "build fail"
+} else {
+        echo "build succes"
+
+}
 
 
 // Strip the branch name out of the job name (ex: "Job Name/branch1" -> "Job Name")
