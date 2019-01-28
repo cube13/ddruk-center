@@ -184,7 +184,7 @@ text: "```${restartOut}```\n${buildStatus}\n",
 notifySlack("*Deploy aborted by server*", slackNotificationChannel, [
 [
 color: "danger",
-text: "Error:\n${e}",
+text: "Error:\n${ae}",
 ]
 ])
 // I ignore aborted builds, but you're welcome to notify Slack here
