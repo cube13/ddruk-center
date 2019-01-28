@@ -40,7 +40,7 @@ message = sh(returnStdout: true, script: 'git log -1 --pretty=%B').trim()
 def build() {
 //out = sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa deployer@${node} \"ls -al\"").trim()
 //out = out + " \n" +  sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa deployer@${node} \"df -h\"").trim()
-out = sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa deployer@157.230.100.114 \"du /home/* -hs\"").trim()
+out = sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa deployer@157.230.100.114 \"du /home/deployer/* -hs\"").trim()
 
 return out
 }
@@ -77,8 +77,8 @@ attachments: attachments
 sh "curl -X POST --data-urlencode \'payload=${payload}\' ${slackURL}"
 }
 
-node {
-try {
+pipeline {
+agent any
 stage('Checkout') {
 checkout scm
 populateGlobalVariables()
@@ -178,31 +178,6 @@ text: "```${restartOut}```\n${buildStatus}\n",
 ]
 ])
 }
-
-} catch (hudson.AbortException ae) {
-// I ignore aborted builds, but you're welcome to notify Slack here
-} catch (e) {
-def buildStatus = "Failed"
-
-notifySlack("", slackNotificationChannel, [
-[
-title: "${env.JOB_NAME}, build #${env.BUILD_NUMBER}",
-title_link: "${env.BUILD_URL}",
-color: "danger",
-text: "${buildStatus}",
-fields: [
-[
-title: "Error",
-value: "${e}",
-short: false
-]
-]
-]
-])
-
-throw e
-}
-
 post {
 success {
 notifySlack("Success", slackNotificationChannel, [
@@ -228,5 +203,5 @@ color: "danger",
 }
 }
 
-}
 
+}
