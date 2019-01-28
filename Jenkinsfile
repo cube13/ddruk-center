@@ -100,12 +100,6 @@ node {
       ]
     ])
 
-    if(buildOut(app01)){
-        echo "odyn"
-    } else {
-        echo "dva"
-    }
-
 
 
     // Strip the branch name out of the job name (ex: "Job Name/branch1" -> "Job Name")
@@ -122,26 +116,9 @@ node {
         title: "${jobName}, build #${env.BUILD_NUMBER}",
         title_link: "${env.BUILD_URL}",
         color: "${buildColor}",
-        text: "${buildStatus}\n${author}",
+        text: "${buildStatus}\n",
         "mrkdwn_in": ["fields"],
-        fields: [
-        [
-          title: "Branch",
-          value: "${env.GIT_BRANCH}",
-          short: true
-        ],
-        [
-          title: "Last Commit",
-          value: "${message}",
-          short: false
-        ]
-        ]
-      ],
-      [
-        title: "Failed Tests",
-        color: "${buildColor}",
-        text: "${failedTestsString}",
-        "mrkdwn_in": ["text"],
+
       ]
       ])
     } else
@@ -149,7 +126,7 @@ node {
       notifySlack("Build", slackNotificationChannel, [
       [
         color: "${buildColor}",
-        text: "```${bout}```\n${buildStatus}"
+        text: "```${buildout}```\n${buildStatus}"
         ]
       ])
     }
@@ -172,7 +149,7 @@ node {
       notifySlack("Publish", slackNotificationChannel, [
       [
         color: "${buildColor}",
-        text: "${buildStatus}\n```${bout}```",
+        text: "${buildStatus}\n```${buildout}```",
       ]
       ])
 
@@ -208,7 +185,6 @@ node {
     title: "${env.JOB_NAME}, build #${env.BUILD_NUMBER}",
     title_link: "${env.BUILD_URL}",
     color: "danger",
-    author_name: "${author}",
     text: "${buildStatus}",
     fields: [
       [
