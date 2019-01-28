@@ -100,7 +100,13 @@ node {
       ]
     ])
 
-    buildOut()
+    if(buildOut(app01)){
+        echo 1
+    } else {
+        echo 0
+    }
+
+
 
     // Strip the branch name out of the job name (ex: "Job Name/branch1" -> "Job Name")
 //    jobName = jobName.getAt(0..(jobName.indexOf('/') - 1))
