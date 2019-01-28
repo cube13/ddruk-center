@@ -48,7 +48,7 @@ message = sh(returnStdout: true, script: 'git log -1 --pretty=%B').trim()
 
 def build(node) {
   out = sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa deployer@${node} \"ls -al\"").trim()
-  out = out +  sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa deployer@${node} \"df -h\"").trim()
+  out = out + "\n" +  sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa deployer@${node} \"df -h\"").trim()
   return out
 }
 def publish(node) {
@@ -151,16 +151,16 @@ node {
       echo "Publish"
       parallel (
         "app-01 publish": {
-          publishOut = publish(app01)
+          publishOut = "1\n" + publish(app01)
         },
         "app-01 build" : {
-          publishOut = publishOut + "\n" + build(app01)
+          publishOut = "2\n" + publishOut + "\n" + build(app01)
         },
         "app-02 publish": {
-          publishOut = publishOut + "\n" + publish(app02)
+          publishOut = "3\n" + publishOut + "\n" + publish(app02)
         },
         "app-02 build" : {
-          publishOut = publishOut + "\n" + build(app02)
+          publishOut = "4\n" + publishOut + "\n" + build(app02)
         }
       )
 
