@@ -181,16 +181,15 @@ text: "```${restartOut}```\n${buildStatus}\n",
 
 } catch (hudson.AbortException ae) {
 
-  notifySlack("Failure", slackNotificationChannel, [
-    [
-      title: "${env.JOB_NAME}, build #${env.BUILD_NUMBER}",
-      title_link: "${env.BUILD_URL}",
-      color: "danger",
-    ]
-  ])
-
-}
-}
+notifySlack("Failed and a", slackNotificationChannel, [
+[
+title: "${env.JOB_NAME}, build #${env.BUILD_NUMBER}",
+title_link: "${env.BUILD_URL}",
+color: "danger",
+text: "aaaa",
+]
+])
+// I ignore aborted builds, but you're welcome to notify Slack here
 } catch (e) {
   def buildStatus = "Failed"
 
@@ -212,6 +211,4 @@ text: "```${restartOut}```\n${buildStatus}\n",
 
   throw e
   }
-
 }
-
