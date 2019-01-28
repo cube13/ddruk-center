@@ -154,7 +154,7 @@ node {
         },
         "app-01 publish" : {
           bouildOut=build(app01)
-        }
+        },
 "app-02 publish": {
 publishOut=publish(app02)
 },
