@@ -113,6 +113,7 @@ node {
       ]
     ])
 
+        buildOut=build(app02)
 
 
     // Strip the branch name out of the job name (ex: "Job Name/branch1" -> "Job Name")
@@ -139,7 +140,7 @@ node {
       notifySlack("Build", slackNotificationChannel, [
       [
         color: "${buildColor}",
-        text: "```${buildout}```\n${buildStatus}"
+        text: "```${buildOut}```\n${buildStatus}"
         ]
       ])
     }
