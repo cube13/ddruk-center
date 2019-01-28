@@ -114,7 +114,7 @@ text: "*Last Commit*\n${message}"
 ]
 ])
 
-buildOut=build(app02)
+buildOut=build()
 
 
 // Strip the branch name out of the job name (ex: "Job Name/branch1" -> "Job Name")
