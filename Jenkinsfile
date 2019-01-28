@@ -171,14 +171,14 @@ bouildOut=build(app02)
       notifySlack("Publish", slackNotificationChannel, [
       [
         color: "${buildColor}",
-        text: "${buildStatus}\n```${buildout}```",
+        text: "${buildStatus}\n```${buildOut}```",
       ]
       ])
 
       notifySlack("Publish", slackNotificationChannel, [
       [
         color: "${buildColor}",
-        text: "${buildStatus}\n```${out}```",
+        text: "${buildStatus}\n```${publishOut}```",
       ]
       ])
 
