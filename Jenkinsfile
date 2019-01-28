@@ -39,8 +39,8 @@ def buildOut(node) {
   buildout = sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa deployer@${node} \"ls -al\"").trim()
   buildout = buildout +  sh(returnStdout: true, script: "ssh -p2212 -i /home/deployer/.ssh/id_rsa deployer@${node} \"ls -al\"").trim()
 }
-def publish = {
-publishout = sh(returnStdout: true, script: "rsync -rvae \"ssh -p2212 -i /home/deployer/.ssh/id_rsa\" --exclude .git --exclude .idea --delete ${WORKSPACE}/ deployer@${ddruk}:/home/deployer/${env.JOB_NAME}/").trim()
+def publish(node) {
+publishout = sh(returnStdout: true, script: "rsync -rvae \"ssh -p2212 -i /home/deployer/.ssh/id_rsa\" --exclude .git --exclude .idea --delete ${WORKSPACE}/ deployer@${node}:/home/deployer/${env.JOB_NAME}/").trim()
 }
 
 def populateGlobalVariables = {
@@ -137,10 +137,10 @@ node {
       echo "Publish"
       parallel (
         "app-01 publish": {
-          publish()
+          publish(app01)
         },
         "app-02 publish" : {
-          buildOut()
+          buildOut(app01)
         }
       )
       def buildColor = currentBuild.result == null ? "good": "warning"
