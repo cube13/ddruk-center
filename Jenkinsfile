@@ -181,12 +181,10 @@ text: "```${restartOut}```\n${buildStatus}\n",
 
 } catch (hudson.AbortException ae) {
 
-notifySlack("Failed and a", slackNotificationChannel, [
+notifySlack("*Deploy aborted by server*", slackNotificationChannel, [
 [
-title: "${env.JOB_NAME}, build #${env.BUILD_NUMBER}",
-title_link: "${env.BUILD_URL}",
 color: "danger",
-text: "aaaa",
+text: "Error:\n${e}",
 ]
 ])
 // I ignore aborted builds, but you're welcome to notify Slack here
