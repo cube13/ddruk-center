@@ -19,11 +19,8 @@ def message = ""
 def publishOut = ""
 def restartOut = ""
 def buildOut = ""
-def app01 = "138.68.59.63"
-def app02 = "157.230.31.117"
-//def app02 = ""
 
-String[] nodes = [ "157.230.31.117","157.230.100.111" ]
+String[] nodes = [ "157.230.31.117","157.230.100.114" ]
 
 
 
