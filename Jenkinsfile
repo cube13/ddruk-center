@@ -77,8 +77,8 @@ attachments: attachments
 sh "curl -X POST --data-urlencode \'payload=${payload}\' ${slackURL}"
 }
 
-pipeline {
-agent any
+node {
+try {
 stage('Checkout') {
 checkout scm
 populateGlobalVariables()
@@ -178,30 +178,40 @@ text: "```${restartOut}```\n${buildStatus}\n",
 ]
 ])
 }
-post {
-success {
-notifySlack("Success", slackNotificationChannel, [
-[
-title: "${env.JOB_NAME}, build #${env.BUILD_NUMBER}",
-title_link: "${env.BUILD_URL}",
-color: "good",
-]
-])
 
-}
+} catch (hudson.AbortException ae) {
 
-failure {
-notifySlack("Failure", slackNotificationChannel, [
-[
-title: "${env.JOB_NAME}, build #${env.BUILD_NUMBER}",
-title_link: "${env.BUILD_URL}",
-color: "danger",
-]
-])
-
+  notifySlack("Failure", slackNotificationChannel, [
+    [
+      title: "${env.JOB_NAME}, build #${env.BUILD_NUMBER}",
+      title_link: "${env.BUILD_URL}",
+      color: "danger",
+    ]
+  ])
 
 }
 }
+} catch (e) {
+  def buildStatus = "Failed"
 
+  notifySlack("", slackNotificationChannel, [
+    [
+      title: "${env.JOB_NAME}, build #${env.BUILD_NUMBER}",
+      title_link: "${env.BUILD_URL}",
+      color: "danger",
+      text: "${buildStatus}",
+      fields: [
+        [
+          title: "Error",
+          value: "${e}",
+          short: false
+        ]
+      ]
+    ]
+  ])
+
+  throw e
+  }
 
 }
+
