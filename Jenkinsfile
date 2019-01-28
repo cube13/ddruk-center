@@ -152,13 +152,13 @@ node {
         "app-01 publish": {
           publishOut=publish(app01)
         },
-        "app-01 publish" : {
+        "app-01 build" : {
           bouildOut=build(app01)
         },
 "app-02 publish": {
 publishOut=publish(app02)
 },
-"app-02 publish" : {
+"app-02 build" : {
 bouildOut=build(app02)
 }
       )
