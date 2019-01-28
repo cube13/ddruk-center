@@ -140,7 +140,7 @@ node {
       echo "Publish"
       parallel (
         "app-01 publish": {
-          publish(app01)
+          out=publish(app01)
         },
         "app-02 publish" : {
           buildOut(app01)
